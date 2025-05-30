@@ -1,31 +1,31 @@
-id,regulator,requirement_text,category
-IN-001,RBI,"Banks must maintain a minimum Capital Adequacy Ratio (CAR) as per Basel III guidelines.",Capital Adequacy
-IN-002,RBI,"Banks should have a Board-approved Cybersecurity Framework in place.",Cybersecurity
-IN-003,RBI,"Customer KYC (Know Your Customer) norms must be strictly adhered to.",KYC/AML
-IN-004,RBI,"Banks must report large cash transactions exceeding prescribed limits to FIU-IND.",Transaction Monitoring
-IN-005,RBI,"All customer complaints must be resolved within the timelines specified by RBI.",Customer Grievance Redressal
-IN-006,RBI,"Banks should conduct regular Internal Audits and Compliance Reviews.",Internal Audit
-IN-007,RBI,"Banks must comply with guidelines on outsourcing of financial services.",Outsourcing
-IN-008,RBI,"Banks should have a Board-approved policy on Credit Risk Management.",Risk Management
-IN-009,RBI,"Sensitive customer information must be protected as per data privacy regulations.",Data Protection
-IN-010,RBI,"Banks must report frauds above the threshold limits to the RBI within stipulated timelines.",Fraud Reporting
-IN-011,RBI,"Banks should maintain adequate liquidity to meet their short-term obligations.",Liquidity Management
-IN-012,RBI,"Banks must comply with the directions on customer data storage and localization.",Data Localization
-IN-013,RBI,"Banks should implement strong authentication mechanisms for online transactions.",Transaction Security
-IN-014,RBI,"Banks are required to ensure compliance with the Prevention of Money Laundering Act (PMLA).",AML Compliance
-IN-015,RBI,"All electronic payments must comply with the Security Guidelines prescribed by RBI.",Electronic Payments
-IN-016,RBI,"Banks must have a Board-approved policy on operational risk management.",Risk Management
-IN-017,RBI,"Banks should conduct periodic vulnerability assessments and penetration testing.",Cybersecurity
-IN-018,RBI,"Banks are required to report cyber incidents and breaches to CERT-In and RBI.",Incident Reporting
-IN-019,RBI,"Banks must ensure timely submission of statutory returns to RBI.",Regulatory Reporting
-IN-020,RBI,"Banks should implement effective Business Continuity Plans (BCP) and Disaster Recovery (DR) strategies.",BCP/DR
-IN-021,RBI,"Banks must comply with Fair Practices Code and transparency in lending.",Customer Protection
-IN-022,RBI,"Banks should ensure compliance with guidelines on credit information sharing.",Credit Information
-IN-023,RBI,"Banks must protect the interests of depositors as per Deposit Insurance guidelines.",Depositor Protection
-IN-024,RBI,"Banks should adhere to guidelines on remuneration and compensation of executives.",Governance
-IN-025,RBI,"Banks must implement segregation of duties to prevent fraud and errors.",Internal Controls
-IN-026,RBI,"Banks should ensure compliance with RBI directions on asset classification and provisioning.",Asset Quality
-IN-027,RBI,"Banks must report suspicious transactions to the Financial Intelligence Unit (FIU).",AML Compliance
-IN-028,RBI,"Banks must ensure compliance with guidelines on Customer Service and Transparency.",Customer Service
-IN-029,RBI,"Banks should maintain adequate records for all transactions as per RBI requirements.",Record Keeping
-IN-030,RBI,"Banks must comply with guidelines on Digital Lending Platforms and customer protection.",Digital Lending
+id,regulator,requirement_text,category,expanded_text,tags,category_refined
+IN-001,RBI,"Banks must maintain a minimum Capital Adequacy Ratio (CAR) as per Basel III guidelines.",Capital Adequacy,"Banks need to keep enough capital to cover their risks according to Basel III rules.","capital adequacy, Basel III, risk coverage","Financial Stability & Capital Adequacy"
+IN-002,RBI,"Banks should have a Board-approved Cybersecurity Framework in place.",Cybersecurity,"Banks must have an approved cybersecurity plan to protect their systems.","cybersecurity, board approval, framework","Cybersecurity Governance"
+IN-003,RBI,"Customer KYC (Know Your Customer) norms must be strictly adhered to.",KYC/AML,"Banks must follow strict rules to verify customer identities.","KYC, customer verification, AML","Customer Identification & AML"
+IN-004,RBI,"Banks must report large cash transactions exceeding prescribed limits to FIU-IND.",Transaction Monitoring,"Report big cash transactions to the financial intelligence unit.","cash transactions, reporting, FIU-IND","Transaction Monitoring & Reporting"
+IN-005,RBI,"All customer complaints must be resolved within the timelines specified by RBI.",Customer Grievance Redressal,"Banks must solve customer complaints on time as per RBI rules.","customer complaints, grievance redressal, timelines","Customer Service & Grievance Management"
+IN-006,RBI,"Banks should conduct regular Internal Audits and Compliance Reviews.",Internal Audit,"Banks need to regularly check their processes and rules are followed.","internal audit, compliance review, controls","Internal Audit & Compliance"
+IN-007,RBI,"Banks must comply with guidelines on outsourcing of financial services.",Outsourcing,"Follow RBI rules when hiring outside vendors for services.","outsourcing, vendor management, compliance","Third-Party Risk & Outsourcing"
+IN-008,RBI,"Banks should have a Board-approved policy on Credit Risk Management.",Risk Management,"Banks must have an approved plan to manage credit risks.","credit risk, board policy, risk management","Risk Management & Governance"
+IN-009,RBI,"Sensitive customer information must be protected as per data privacy regulations.",Data Protection,"Protect customers’ private data according to laws.","data protection, privacy, customer information","Data Privacy & Protection"
+IN-010,RBI,"Banks must report frauds above the threshold limits to the RBI within stipulated timelines.",Fraud Reporting,"Report significant fraud cases to RBI on time.","fraud reporting, RBI, timelines","Fraud Detection & Reporting"
+IN-011,RBI,"Banks should maintain adequate liquidity to meet their short-term obligations.",Liquidity Management,"Keep enough cash or assets to pay short-term debts.","liquidity, cash management, obligations","Financial Stability & Liquidity"
+IN-012,RBI,"Banks must comply with the directions on customer data storage and localization.",Data Localization,"Store customer data within the country as required by RBI.","data localization, storage, compliance","Data Privacy & Localization"
+IN-013,RBI,"Banks should implement strong authentication mechanisms for online transactions.",Transaction Security,"Use secure methods to verify users during online transactions.","authentication, transaction security, online","Transaction Security & Authentication"
+IN-014,RBI,"Banks are required to ensure compliance with the Prevention of Money Laundering Act (PMLA).",AML Compliance,"Follow rules to prevent money laundering activities.","AML, PMLA, compliance","Anti-Money Laundering (AML)"
+IN-015,RBI,"All electronic payments must comply with the Security Guidelines prescribed by RBI.",Electronic Payments,"Ensure electronic payments follow RBI’s security rules.","electronic payments, security, RBI guidelines","Payment Security & Compliance"
+IN-016,RBI,"Banks must have a Board-approved policy on operational risk management.",Risk Management,"Have an approved plan to manage operational risks.","operational risk, board policy, risk management","Risk Management & Governance"
+IN-017,RBI,"Banks should conduct periodic vulnerability assessments and penetration testing.",Cybersecurity,"Regularly test systems for security weaknesses.","vulnerability assessment, penetration testing, cybersecurity","Cybersecurity Operations"
+IN-018,RBI,"Banks are required to report cyber incidents and breaches to CERT-In and RBI.",Incident Reporting,"Report cyber attacks and data breaches to authorities.","cyber incidents, breach reporting, CERT-In","Cybersecurity Incident Management"
+IN-019,RBI,"Banks must ensure timely submission of statutory returns to RBI.",Regulatory Reporting,"Submit required reports to RBI on time.","statutory returns, regulatory reporting, RBI","Regulatory Compliance & Reporting"
+IN-020,RBI,"Banks should implement effective Business Continuity Plans (BCP) and Disaster Recovery (DR) strategies.",BCP/DR,"Have plans to keep operations running during emergencies.","business continuity, disaster recovery, planning","Operational Resilience & BCP"
+IN-021,RBI,"Banks must comply with Fair Practices Code and transparency in lending.",Customer Protection,"Follow fair rules and be clear with customers when lending.","fair practices, transparency, lending","Customer Protection & Fair Practices"
+IN-022,RBI,"Banks should ensure compliance with guidelines on credit information sharing.",Credit Information,"Follow rules for sharing credit data responsibly.","credit information, data sharing, compliance","Credit Risk & Data Sharing"
+IN-023,RBI,"Banks must protect the interests of depositors as per Deposit Insurance guidelines.",Depositor Protection,"Protect depositors’ money according to insurance rules.","depositor protection, deposit insurance","Customer Protection & Depositor Safety"
+IN-024,RBI,"Banks should adhere to guidelines on remuneration and compensation of executives.",Governance,"Follow RBI rules on paying bank executives.","remuneration, compensation, governance","Governance & Executive Compensation"
+IN-025,RBI,"Banks must implement segregation of duties to prevent fraud and errors.",Internal Controls,"Separate tasks so no one person controls everything to avoid fraud.","segregation of duties, fraud prevention, internal control","Internal Controls & Fraud Prevention"
+IN-026,RBI,"Banks should ensure compliance with RBI directions on asset classification and provisioning.",Asset Quality,"Classify loans correctly and set aside money for bad debts.","asset classification, provisioning, loan quality","Asset Quality & Risk Management"
+IN-027,RBI,"Banks must report suspicious transactions to the Financial Intelligence Unit (FIU).",AML Compliance,"Report suspicious activities to financial intelligence units.","suspicious transactions, reporting, FIU","Anti-Money Laundering (AML)"
+IN-028,RBI,"Banks must ensure compliance with guidelines on Customer Service and Transparency.",Customer Service,"Follow rules to serve customers fairly and clearly.","customer service, transparency, compliance","Customer Service & Transparency"
+IN-029,RBI,"Banks should maintain adequate records for all transactions as per RBI requirements.",Record Keeping,"Keep proper records of all banking transactions.","record keeping, transactions, compliance","Governance & Documentation"
+IN-030,RBI,"Banks must comply with guidelines on Digital Lending Platforms and customer protection.",Digital Lending,"Follow RBI rules for online lending and protect customers.","digital lending, customer protection, guidelines","Digital Banking & Customer Protection"

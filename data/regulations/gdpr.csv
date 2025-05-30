@@ -1,31 +1,31 @@
-id,regulator,requirement_text,category
-EU-001,GDPR,"Personal data shall be processed lawfully, fairly, and transparently.",Lawfulness and Transparency
-EU-002,GDPR,"Personal data shall be collected for specified, explicit, and legitimate purposes.",Purpose Limitation
-EU-003,GDPR,"Personal data shall be adequate, relevant, and limited to what is necessary.",Data Minimization
-EU-004,GDPR,"Personal data shall be accurate and kept up to date.",Accuracy
-EU-005,GDPR,"Personal data shall be kept in a form that permits identification of data subjects for no longer than necessary.",Storage Limitation
-EU-006,GDPR,"Processing shall ensure appropriate security of personal data, including protection against unauthorized or unlawful processing.",Integrity and Confidentiality
-EU-007,GDPR,"Data controllers shall be responsible for and able to demonstrate compliance with GDPR principles.",Accountability
-EU-008,GDPR,"Data subjects have the right to access their personal data and information about processing.",Data Subject Rights
-EU-009,GDPR,"Data subjects have the right to rectification of inaccurate personal data.",Data Subject Rights
-EU-010,GDPR,"Data subjects have the right to erasure (‘right to be forgotten’) under certain conditions.",Data Subject Rights
-EU-011,GDPR,"Data subjects have the right to restrict processing of their personal data.",Data Subject Rights
-EU-012,GDPR,"Data subjects have the right to data portability.",Data Subject Rights
-EU-013,GDPR,"Data subjects have the right to object to processing of personal data.",Data Subject Rights
-EU-014,GDPR,"Data controllers must obtain valid consent for processing personal data where required.",Consent
-EU-015,GDPR,"Processing of special categories of personal data is prohibited unless specific conditions apply.",Special Categories
-EU-016,GDPR,"Data controllers must implement data protection by design and by default.",Privacy by Design
-EU-017,GDPR,"Data controllers must maintain records of processing activities.",Record Keeping
-EU-018,GDPR,"Data controllers must appoint a Data Protection Officer where required.",Governance
-EU-019,GDPR,"Data controllers must notify supervisory authorities of personal data breaches within 72 hours.",Breach Notification
-EU-020,GDPR,"Data controllers must inform data subjects about data breaches without undue delay.",Breach Notification
-EU-021,GDPR,"Cross-border data transfers are allowed only if adequate safeguards are in place.",International Data Transfers
-EU-022,GDPR,"Data controllers must conduct Data Protection Impact Assessments for high-risk processing.",Risk Assessment
-EU-023,GDPR,"Data controllers must implement appropriate technical and organizational measures to ensure security.",Security
-EU-024,GDPR,"Processing of personal data for automated decision-making including profiling is subject to specific safeguards.",Automated Decision-Making
-EU-025,GDPR,"Data controllers must ensure contracts with data processors include GDPR-compliant terms.",Third Party Management
-EU-026,GDPR,"Data controllers must ensure transparency in data processing activities.",Transparency
-EU-027,GDPR,"Data controllers must provide clear and accessible privacy notices.",Transparency
-EU-028,GDPR,"Data subjects may lodge complaints with supervisory authorities.",Enforcement
-EU-029,GDPR,"Supervisory authorities have investigative and corrective powers.",Enforcement
-EU-030,GDPR,"Data controllers must cooperate with supervisory authorities and comply with their decisions.",Compliance
+id,regulator,requirement_text,category,expanded_text,tags,category_refined
+EU-001,GDPR,"Personal data shall be processed lawfully, fairly, and transparently.",Lawfulness and Transparency,"Personal data must be handled legally, fairly, and openly.","lawful processing, fairness, transparency","Data Protection Principles"
+EU-002,GDPR,"Personal data shall be collected for specified, explicit, and legitimate purposes.",Purpose Limitation,"Collect personal data only for clear, lawful reasons.","purpose limitation, data collection","Data Protection Principles"
+EU-003,GDPR,"Personal data shall be adequate, relevant, and limited to what is necessary.",Data Minimization,"Only collect the personal data needed for the purpose.","data minimization, relevance, necessity","Data Protection Principles"
+EU-004,GDPR,"Personal data shall be accurate and kept up to date.",Accuracy,"Make sure personal data is correct and current.","accuracy, data quality","Data Quality"
+EU-005,GDPR,"Personal data shall be kept in a form that permits identification of data subjects for no longer than necessary.",Storage Limitation,"Keep personal data only as long as needed to identify people.","data retention, storage limitation","Data Retention & Minimization"
+EU-006,GDPR,"Processing shall ensure appropriate security of personal data, including protection against unauthorized or unlawful processing.",Integrity and Confidentiality,"Protect personal data against unauthorized or illegal use.","security, integrity, confidentiality","Information Security"
+EU-007,GDPR,"Data controllers shall be responsible for and able to demonstrate compliance with GDPR principles.",Accountability,"Organizations must be responsible and prove they follow GDPR rules.","accountability, compliance, responsibility","Governance & Accountability"
+EU-008,GDPR,"Data subjects have the right to access their personal data and information about processing.",Data Subject Rights,"People can see what personal data is held and how it is used.","data access, user rights","Data Subject Rights"
+EU-009,GDPR,"Data subjects have the right to rectification of inaccurate personal data.",Data Subject Rights,"People can correct their wrong or incomplete personal data.","data correction, user rights","Data Subject Rights"
+EU-010,GDPR,"Data subjects have the right to erasure (‘right to be forgotten’) under certain conditions.",Data Subject Rights,"People can ask to delete their personal data in some cases.","data erasure, right to be forgotten","Data Subject Rights"
+EU-011,GDPR,"Data subjects have the right to restrict processing of their personal data.",Data Subject Rights,"People can limit how their personal data is used.","processing restriction, user rights","Data Subject Rights"
+EU-012,GDPR,"Data subjects have the right to data portability.",Data Subject Rights,"People can get and move their personal data to another service.","data portability, user rights","Data Subject Rights"
+EU-013,GDPR,"Data subjects have the right to object to processing of personal data.",Data Subject Rights,"People can object to their data being processed for certain reasons.","objection, processing, user rights","Data Subject Rights"
+EU-014,GDPR,"Data controllers must obtain valid consent for processing personal data where required.",Consent,"Organizations must get proper permission before using personal data.","consent, permission, data use","Consent Management"
+EU-015,GDPR,"Processing of special categories of personal data is prohibited unless specific conditions apply.",Special Categories,"Sensitive personal data can only be used under strict conditions.","special categories, sensitive data","Special Data Protection"
+EU-016,GDPR,"Data controllers must implement data protection by design and by default.",Privacy by Design,"Privacy should be included from the start in systems and processes.","privacy by design, default settings","Privacy Engineering"
+EU-017,GDPR,"Data controllers must maintain records of processing activities.",Record Keeping,"Keep logs of all personal data handling activities.","record keeping, processing activities","Compliance & Documentation"
+EU-018,GDPR,"Data controllers must appoint a Data Protection Officer where required.",Governance,"Assign a Data Protection Officer if needed by law.","DPO, governance, compliance","Governance & Oversight"
+EU-019,GDPR,"Data controllers must notify supervisory authorities of personal data breaches within 72 hours.",Breach Notification,"Inform authorities within 72 hours if a data breach occurs.","data breach, notification, authorities","Incident Management"
+EU-020,GDPR,"Data controllers must inform data subjects about data breaches without undue delay.",Breach Notification,"Tell people quickly if their data has been breached.","data breach, user notification","Incident Management"
+EU-021,GDPR,"Cross-border data transfers are allowed only if adequate safeguards are in place.",International Data Transfers,"Personal data can only leave the country if properly protected.","cross-border, data transfer, safeguards","Data Transfer & Security"
+EU-022,GDPR,"Data controllers must conduct Data Protection Impact Assessments for high-risk processing.",Risk Assessment,"Evaluate privacy risks before high-risk data use.","DPIA, risk assessment, privacy","Risk Management"
+EU-023,GDPR,"Data controllers must implement appropriate technical and organizational measures to ensure security.",Security,"Use technical and organizational steps to protect data.","security measures, technical controls","Information Security"
+EU-024,GDPR,"Processing of personal data for automated decision-making including profiling is subject to specific safeguards.",Automated Decision-Making,"Automated decisions with personal data must have protections.","automated decisions, profiling, safeguards","AI Governance"
+EU-025,GDPR,"Data controllers must ensure contracts with data processors include GDPR-compliant terms.",Third Party Management,"Contracts with vendors must follow GDPR rules.","third-party, contracts, compliance","Vendor & Third-Party Risk"
+EU-026,GDPR,"Data controllers must ensure transparency in data processing activities.",Transparency,"Clearly explain how personal data is used.","transparency, data processing, communication","Transparency & Communication"
+EU-027,GDPR,"Data controllers must provide clear and accessible privacy notices.",Transparency,"Provide easy-to-understand privacy notices to people.","privacy notice, communication","Transparency & Communication"
+EU-028,GDPR,"Data subjects may lodge complaints with supervisory authorities.",Enforcement,"People can complain to authorities if their data rights are violated.","complaints, enforcement, data rights","Enforcement & Compliance"
+EU-029,GDPR,"Supervisory authorities have investigative and corrective powers.",Enforcement,"Authorities can investigate and enforce GDPR compliance.","supervisory authority, investigation, enforcement","Enforcement & Compliance"
+EU-030,GDPR,"Data controllers must cooperate with supervisory authorities and comply with their decisions.",Compliance,"Organizations must work with authorities and follow their rulings.","cooperation, compliance, authority","Governance & Accountability"

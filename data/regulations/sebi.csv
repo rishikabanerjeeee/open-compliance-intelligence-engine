@@ -1,31 +1,31 @@
-id,regulator,requirement_text,category
-IN-SEBI-001,SEBI,"Market intermediaries must establish a robust cyber security and cyber resilience framework.",Cybersecurity
-IN-SEBI-002,SEBI,"All trading members must implement 2FA for access to trading systems.",Access Control
-IN-SEBI-003,SEBI,"Audit trails of all transactions must be maintained and made available to SEBI upon request.",Audit Trail
-IN-SEBI-004,SEBI,"Investment advisers must disclose all potential conflicts of interest.",Transparency
-IN-SEBI-005,SEBI,"Client assets must be segregated and not misused under any circumstance.",Investor Protection
-IN-SEBI-006,SEBI,"All market infrastructure institutions must submit periodic cyber incident reports to SEBI.",Incident Reporting
-IN-SEBI-007,SEBI,"Regulated entities must ensure timely redressal of investor grievances.",Grievance Redressal
-IN-SEBI-008,SEBI,"Listed companies must disclose all material events within 24 hours.",Corporate Disclosure
-IN-SEBI-009,SEBI,"Periodic system audits must be conducted by market participants.",IT Governance
-IN-SEBI-010,SEBI,"Stock brokers must comply with Know Your Client (KYC) norms.",KYC/AML
-IN-SEBI-011,SEBI,"Mutual Funds must disclose risk-o-meter rankings to investors regularly.",Risk Disclosure
-IN-SEBI-012,SEBI,"Asset management companies must adhere to fair valuation norms.",Asset Valuation
-IN-SEBI-013,SEBI,"Financial institutions must adopt adequate cyber risk assessment methodologies.",Risk Management
-IN-SEBI-014,SEBI,"Periodic disclosures of shareholding patterns are mandatory for listed entities.",Corporate Governance
-IN-SEBI-015,SEBI,"Trading systems must be designed to prevent self-trading and market abuse.",Market Integrity
-IN-SEBI-016,SEBI,"Alternative Investment Funds must maintain compliance with reporting obligations.",Regulatory Reporting
-IN-SEBI-017,SEBI,"Regulated entities must maintain logs of access to trading and surveillance systems.",Access Logging
-IN-SEBI-018,SEBI,"Investor-facing platforms must implement robust privacy policies.",Data Privacy
-IN-SEBI-019,SEBI,"Surveillance systems should be capable of detecting insider trading and price manipulation.",Surveillance
-IN-SEBI-020,SEBI,"Market intermediaries must encrypt sensitive data in transit and storage.",Data Security
-IN-SEBI-021,SEBI,"Periodic disclosures on fund performance must be sent to investors.",Investor Communication
-IN-SEBI-022,SEBI,"Cyber resilience measures must be tested via simulations and drills.",Cyber Resilience
-IN-SEBI-023,SEBI,"Institutions must disclose cyber risks in annual compliance reports.",Compliance Reporting
-IN-SEBI-024,SEBI,"Third-party vendors must comply with SEBI’s outsourcing guidelines.",Outsourcing
-IN-SEBI-025,SEBI,"FIIs and FPIs must follow the code of conduct for foreign portfolio investment.",FPI Regulation
-IN-SEBI-026,SEBI,"Asset managers must maintain records of investor transactions for at least 8 years.",Record Keeping
-IN-SEBI-027,SEBI,"Independent directors must be appointed as per the Companies Act and SEBI LODR.",Governance
-IN-SEBI-028,SEBI,"No insider shall trade based on unpublished price sensitive information.",Insider Trading
-IN-SEBI-029,SEBI,"Broker-dealers must maintain net capital requirements and report regularly.",Capital Adequacy
-IN-SEBI-030,SEBI,"Regulated entities must adhere to guidelines for digital onboarding and e-KYC.",Digital Onboarding
+id,regulator,requirement_text,category,expanded_text,tags,category_refined
+IN-SEBI-001,SEBI,"Market intermediaries must establish a robust cyber security and cyber resilience framework.",Cybersecurity,"Market intermediaries must create strong security systems and plans to handle cyber threats and recover quickly.","cybersecurity, cyber resilience, market intermediaries","Cybersecurity Governance"
+IN-SEBI-002,SEBI,"All trading members must implement 2FA for access to trading systems.",Access Control,"Trading members must use two-factor authentication to secure system access.","2FA, access control, trading systems","Access Control & Authentication"
+IN-SEBI-003,SEBI,"Audit trails of all transactions must be maintained and made available to SEBI upon request.",Audit Trail,"Keep detailed records of all transactions and provide them to SEBI if asked.","audit trail, transaction records, compliance","Audit & Transaction Logging"
+IN-SEBI-004,SEBI,"Investment advisers must disclose all potential conflicts of interest.",Transparency,"Investment advisers must openly share any conflicts that might affect their advice.","conflicts of interest, disclosure, transparency","Transparency & Disclosure"
+IN-SEBI-005,SEBI,"Client assets must be segregated and not misused under any circumstance.",Investor Protection,"Keep client assets separate and never use them improperly.","client assets, segregation, investor protection","Investor Protection & Asset Segregation"
+IN-SEBI-006,SEBI,"All market infrastructure institutions must submit periodic cyber incident reports to SEBI.",Incident Reporting,"Market infrastructure must regularly report cyber incidents to SEBI.","cyber incidents, reporting, market infrastructure","Cybersecurity Incident Management"
+IN-SEBI-007,SEBI,"Regulated entities must ensure timely redressal of investor grievances.",Grievance Redressal,"Address investor complaints promptly and effectively.","investor grievances, complaint resolution, timeliness","Investor Grievance Management"
+IN-SEBI-008,SEBI,"Listed companies must disclose all material events within 24 hours.",Corporate Disclosure,"Listed companies must announce important events within one day.","material events, disclosure, timely reporting","Corporate Disclosure & Governance"
+IN-SEBI-009,SEBI,"Periodic system audits must be conducted by market participants.",IT Governance,"Market participants must regularly audit their systems for compliance and security.","system audits, compliance, IT governance","IT Governance & Auditing"
+IN-SEBI-010,SEBI,"Stock brokers must comply with Know Your Client (KYC) norms.",KYC/AML,"Stock brokers must follow KYC rules to verify their clients.","KYC, client verification, AML","Customer Identification & AML"
+IN-SEBI-011,SEBI,"Mutual Funds must disclose risk-o-meter rankings to investors regularly.",Risk Disclosure,"Mutual funds must regularly show investors how risky their investments are.","risk disclosure, mutual funds, investor information","Risk Disclosure & Communication"
+IN-SEBI-012,SEBI,"Asset management companies must adhere to fair valuation norms.",Asset Valuation,"Asset managers must fairly value investments according to rules.","asset valuation, fairness, compliance","Asset Valuation & Reporting"
+IN-SEBI-013,SEBI,"Financial institutions must adopt adequate cyber risk assessment methodologies.",Risk Management,"Financial firms must use proper methods to assess cyber risks.","cyber risk, assessment, financial institutions","Risk Management & Cybersecurity"
+IN-SEBI-014,SEBI,"Periodic disclosures of shareholding patterns are mandatory for listed entities.",Corporate Governance,"Listed companies must regularly disclose who owns their shares.","shareholding patterns, disclosure, governance","Corporate Governance & Transparency"
+IN-SEBI-015,SEBI,"Trading systems must be designed to prevent self-trading and market abuse.",Market Integrity,"Trading platforms should stop users from trading against themselves or abusing the market.","self-trading, market abuse, prevention","Market Integrity & Abuse Prevention"
+IN-SEBI-016,SEBI,"Alternative Investment Funds must maintain compliance with reporting obligations.",Regulatory Reporting,"Alternative funds must meet their reporting duties as required.","reporting obligations, alternative funds, compliance","Regulatory Reporting & Compliance"
+IN-SEBI-017,SEBI,"Regulated entities must maintain logs of access to trading and surveillance systems.",Access Logging,"Keep records of who accesses trading and monitoring systems.","access logs, trading systems, surveillance","Access Control & Logging"
+IN-SEBI-018,SEBI,"Investor-facing platforms must implement robust privacy policies.",Data Privacy,"Platforms for investors must have strong privacy protections.","data privacy, investor platforms, policies","Data Privacy & Protection"
+IN-SEBI-019,SEBI,"Surveillance systems should be capable of detecting insider trading and price manipulation.",Surveillance,"Systems must detect insider trading and unfair price moves.","insider trading, price manipulation, surveillance","Market Surveillance & Fraud Detection"
+IN-SEBI-020,SEBI,"Market intermediaries must encrypt sensitive data in transit and storage.",Data Security,"Protect sensitive data by encrypting it while moving and stored.","encryption, data security, market intermediaries","Data Security & Encryption"
+IN-SEBI-021,SEBI,"Periodic disclosures on fund performance must be sent to investors.",Investor Communication,"Funds must regularly inform investors about performance.","fund performance, disclosures, investor communication","Investor Communication & Reporting"
+IN-SEBI-022,SEBI,"Cyber resilience measures must be tested via simulations and drills.",Cyber Resilience,"Test cyber defense plans regularly through drills and simulations.","cyber resilience, testing, simulations","Cybersecurity Operations & Resilience"
+IN-SEBI-023,SEBI,"Institutions must disclose cyber risks in annual compliance reports.",Compliance Reporting,"Report cyber risks every year in compliance documents.","cyber risks, compliance reporting, institutions","Regulatory Reporting & Cybersecurity"
+IN-SEBI-024,SEBI,"Third-party vendors must comply with SEBI’s outsourcing guidelines.",Outsourcing,"Vendors must follow SEBI rules when handling outsourced work.","outsourcing, vendor compliance, third-party","Third-Party Risk & Outsourcing"
+IN-SEBI-025,SEBI,"FIIs and FPIs must follow the code of conduct for foreign portfolio investment.",FPI Regulation,"Foreign investors must adhere to SEBI’s conduct code.","FII, FPI, code of conduct, foreign investment","Foreign Portfolio Investment Regulation"
+IN-SEBI-026,SEBI,"Asset managers must maintain records of investor transactions for at least 8 years.",Record Keeping,"Keep investor transaction records for 8 years or more.","record keeping, investor transactions, compliance","Governance & Record Keeping"
+IN-SEBI-027,SEBI,"Independent directors must be appointed as per the Companies Act and SEBI LODR.",Governance,"Appoint independent directors following laws and SEBI rules.","independent directors, governance, LODR","Corporate Governance & Board Composition"
+IN-SEBI-028,SEBI,"No insider shall trade based on unpublished price sensitive information.",Insider Trading,"Insiders cannot trade using secret information that affects prices.","insider trading, price sensitive information, prohibition","Market Integrity & Insider Trading"
+IN-SEBI-029,SEBI,"Broker-dealers must maintain net capital requirements and report regularly.",Capital Adequacy,"Broker-dealers must keep minimum capital and report it regularly.","capital adequacy, broker-dealers, reporting","Financial Stability & Capital Adequacy"
+IN-SEBI-030,SEBI,"Regulated entities must adhere to guidelines for digital onboarding and e-KYC.",Digital Onboarding,"Follow SEBI rules for online customer registration and identity verification.","digital onboarding, e-KYC, compliance","Digital Banking & Customer Onboarding"
