@@ -8,7 +8,7 @@ id,control_statement
 7,Retain logs of user access for at least 12 months.
 8,Disable USB access on employee devices to prevent data leaks.
 9,Use AES-256 encryption for sensitive customer data.
-10,Classify all company data into public, internal, confidential, and restricted.
+10,"Classify all company data into public, internal, confidential, and restricted."
 11,Implement anomaly detection systems for financial fraud.
 12,Conduct annual security awareness training for all employees.
 13,Perform quarterly vulnerability assessments on production systems.
