@@ -62,3 +62,37 @@ def process_regulation_csv(file_path, output_dir):
         pickle.dump(embeddings, f)
 
     print(f"[✔] Saved embeddings for '{file_path}' → '{output_path}'")
+
+# NEW: Embed controls list of control texts
+def embed_controls(control_texts):
+    """
+    control_texts: List[str]
+    Returns: List of embeddings for the controls
+    """
+    return encode_texts(control_texts)
+
+# Optional: load controls from CSV and embed
+def embed_controls_from_csv(file_path):
+    df = pd.read_csv(file_path)
+    if 'control_text' not in df.columns:
+        raise ValueError(f"'control_text' column not found in {file_path}")
+    return embed_controls(df['control_text'].tolist())
+
+
+import pandas as pd
+from sentence_transformers import SentenceTransformer
+
+# Load or initialize the model once
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+def encode_texts(texts):
+    return model.encode(texts)
+
+def embed_controls_csv(file_path):
+    df = pd.read_csv(file_path)
+
+    if 'control_statement' not in df.columns:
+        raise ValueError(f"'control_statement' column not found in {file_path}")
+
+    control_texts = df['control_statement'].tolist()
+    return encode_texts(control_texts), control_texts
