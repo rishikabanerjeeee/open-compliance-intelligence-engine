@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+DEU-001,BaFin,"Financial institutions must implement a risk management system proportional to their business model.",Risk Management
+DEU-002,BaFin,"Institutions must comply with the Minimum Requirements for Risk Management (MaRisk).",Risk Management
+DEU-003,BaFin,"Institutions are required to ensure the confidentiality, integrity, and availability of data.",Data Security
+DEU-004,BaFin,"Institutions must establish effective IT governance structures.",Governance
+DEU-005,BaFin,"Banks must conduct regular internal audits to monitor compliance with regulations.",Audit
+DEU-006,BaFin,"Cybersecurity incidents must be reported promptly to BaFin.",Incident Reporting
+DEU-007,BaFin,"Institutions must perform data protection impact assessments (DPIA) when processing personal data.",Data Protection
+DEU-008,BaFin,"Personal data must be processed lawfully, fairly, and transparently in accordance with GDPR.",Data Protection
+DEU-009,BaFin,"Banks must ensure secure data storage and encrypted communication channels.",Encryption
+DEU-010,BaFin,"Third-party service providers must be carefully selected and monitored.",Third-Party Risk
+DEU-011,BaFin,"Institutions must maintain comprehensive documentation of all compliance processes.",Documentation
+DEU-012,BaFin,"Customer due diligence (CDD) must be conducted in accordance with AML regulations.",AML/KYC
+DEU-013,BaFin,"Suspicious transactions must be reported to the Financial Intelligence Unit (FIU).",AML/KYC
+DEU-014,BaFin,"Institutions must implement controls to prevent money laundering and terrorist financing.",AML/KYC
+DEU-015,BaFin,"Employees must receive regular training on compliance and data protection.",Training
+DEU-016,BaFin,"Banks must have a whistleblower system to report compliance violations anonymously.",Governance
+DEU-017,BaFin,"Business continuity plans must be established and regularly tested.",Business Continuity
+DEU-018,BaFin,"Risk assessments must be updated regularly to reflect changes in the business environment.",Risk Management
+DEU-019,BaFin,"Institutions must ensure the segregation of duties to prevent conflicts of interest.",Governance
+DEU-020,BaFin,"Compliance officers must have independent access to the management board.",Governance
+DEU-021,BaFin,"IT systems must be protected against unauthorized access and cyber attacks.",Cybersecurity
+DEU-022,BaFin,"Banks must implement multi-factor authentication for critical systems.",Cybersecurity
+DEU-023,BaFin,"Data backups must be performed regularly and stored securely.",Data Security
+DEU-024,BaFin,"Institutions must ensure transparency in all customer communications.",Transparency
+DEU-025,BaFin,"Banks must comply with the German Banking Act (Kreditwesengesetz, KWG).",Legal Compliance
+DEU-026,BaFin,"Internal controls must be in place to monitor regulatory compliance.",Compliance Monitoring
+DEU-027,BaFin,"Institutions must report regularly to BaFin on financial and operational risks.",Reporting
+DEU-028,BaFin,"Banks must prevent insider trading and market manipulation.",Market Conduct
+DEU-029,BaFin,"Institutions must protect sensitive information and trade secrets.",Confidentiality
+DEU-030,BaFin,"Automated decision-making processes must be transparent and explainable.",AI/Automation

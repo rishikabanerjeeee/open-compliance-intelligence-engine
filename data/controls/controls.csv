@@ -1,0 +1,61 @@
+id,control_statement
+1,Encrypt all customer data in transit and at rest.
+2,Implement multi-factor authentication for all admin logins.
+3,Maintain audit logs for all financial transactions.
+4,Ensure backup data is stored securely in an encrypted format.
+5,Obtain explicit user consent before processing personal data.
+6,Limit employee access to customer records on a need-to-know basis.
+7,Retain logs of user access for at least 12 months.
+8,Disable USB access on employee devices to prevent data leaks.
+9,Use AES-256 encryption for sensitive customer data.
+10,Classify all company data into public, internal, confidential, and restricted.
+11,Implement anomaly detection systems for financial fraud.
+12,Conduct annual security awareness training for all employees.
+13,Perform quarterly vulnerability assessments on production systems.
+14,Ensure patch management is done within 30 days of release.
+15,Restrict administrative access from external networks.
+16,Use DLP tools to detect and block outbound sensitive data.
+17,Review and update privacy policies annually.
+18,Collect only the minimum necessary personal data for processing.
+19,Mask credit card numbers in transaction systems.
+20,Limit data retention to business necessity and legal compliance.
+21,Monitor data access and alert for anomalous behavior.
+22,Encrypt emails containing confidential information.
+23,Store passwords using salted and hashed algorithms.
+24,Implement secure coding practices for all software developed.
+25,Perform background checks on employees in sensitive roles.
+26,Review vendor contracts for data protection clauses.
+27,Ensure third-party data processors are compliant with applicable laws.
+28,Use secure APIs with token-based authentication.
+29,Keep customer data within approved geographic regions.
+30,Ensure endpoint devices have antivirus and firewall enabled.
+31,Establish a documented incident response plan.
+32,Allow users to delete their personal data upon request.
+33,Provide a data breach notification within 72 hours.
+34,Perform annual penetration testing by an external party.
+35,Implement session timeout and re-authentication mechanisms.
+36,Record customer consent in a retrievable form.
+37,Implement role-based access control across systems.
+38,Notify customers of changes in privacy policies.
+39,Encrypt backups and replicate them to a secondary region.
+40,Document all regulatory compliance procedures.
+41,Verify customer identities using KYC protocols.
+42,Monitor user sessions and terminate idle connections.
+43,Restrict printing of sensitive data in open office areas.
+44,Block access to public file sharing platforms.
+45,Ensure Wi-Fi networks use WPA3 security protocol.
+46,Allow customers to opt out of marketing communications.
+47,Provide customers with access logs upon request.
+48,Maintain an internal audit team to check compliance regularly.
+49,Maintain segregation of duties in financial processes.
+50,Log all API access and usage details.
+51,Update access rights immediately upon employee exit.
+52,Perform regular reviews of access rights and permissions.
+53,Enforce use of strong passwords and regular rotation.
+54,Use data anonymization for analytics on customer data.
+55,Ensure secure destruction of hard disks before disposal.
+56,Encrypt data before uploading to cloud platforms.
+57,Enable real-time monitoring for unusual financial transactions.
+58,Maintain compliance records for at least 5 years.
+59,Log failed login attempts and lock accounts after 5 failures.
+60,Publish a privacy notice detailing data processing purposes.

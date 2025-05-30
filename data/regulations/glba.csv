@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+US-001,GLBA,"Financial institutions must protect customer information against unauthorized access.",Safeguards Rule
+US-002,GLBA,"Financial institutions must develop and implement a written information security plan.",Safeguards Rule
+US-003,GLBA,"Customer data must be collected and used only for legitimate business purposes.",Purpose Limitation
+US-004,GLBA,"Financial institutions must ensure proper employee training on data privacy.",Training and Awareness
+US-005,GLBA,"Financial institutions must oversee service providers to ensure they protect customer information.",Third-Party Management
+US-006,GLBA,"Financial institutions must limit access to customer information to authorized personnel.",Access Controls
+US-007,GLBA,"Financial institutions must regularly test and monitor information security systems.",Monitoring and Testing
+US-008,GLBA,"Financial institutions must have procedures for detecting and responding to security incidents.",Incident Response
+US-009,GLBA,"Financial institutions must notify customers of their privacy policies and practices.",Privacy Notice
+US-010,GLBA,"Customers must be given the right to opt out of information sharing with nonaffiliated third parties.",Opt-Out Rights
+US-011,GLBA,"Financial institutions must protect against anticipated threats to customer information security.",Risk Assessment
+US-012,GLBA,"Financial institutions must protect against unauthorized access to customer information in electronic and physical forms.",Physical and Electronic Safeguards
+US-013,GLBA,"Financial institutions must encrypt sensitive customer information during transmission and storage.",Encryption
+US-014,GLBA,"Financial institutions must maintain records of compliance activities.",Record Keeping
+US-015,GLBA,"Financial institutions must implement procedures to evaluate the effectiveness of their information security program.",Program Evaluation
+US-016,GLBA,"Financial institutions must establish safeguards for customer information when disposing of records.",Disposal
+US-017,GLBA,"Financial institutions must limit customer information collection to what is necessary.",Data Minimization
+US-018,GLBA,"Financial institutions must develop policies for managing changes to their information security program.",Policy Management
+US-019,GLBA,"Financial institutions must implement secure user authentication mechanisms.",Authentication
+US-020,GLBA,"Financial institutions must maintain physical security controls to protect customer information.",Physical Security
+US-021,GLBA,"Financial institutions must maintain security controls over network and infrastructure.",Network Security
+US-022,GLBA,"Financial institutions must identify reasonably foreseeable internal and external risks.",Risk Identification
+US-023,GLBA,"Financial institutions must provide annual training to staff on privacy and security requirements.",Training
+US-024,GLBA,"Financial institutions must designate an individual to coordinate the information security program.",Governance
+US-025,GLBA,"Financial institutions must monitor and manage security incidents.",Incident Management
+US-026,GLBA,"Financial institutions must notify regulatory authorities in case of certain breaches.",Breach Notification
+US-027,GLBA,"Financial institutions must ensure that their policies comply with federal and state privacy laws.",Regulatory Compliance
+US-028,GLBA,"Financial institutions must provide consumers with annual privacy notices.",Privacy Notice
+US-029,GLBA,"Financial institutions must safeguard customer information from unauthorized disclosure.",Confidentiality
+US-030,GLBA,"Financial institutions must implement controls for managing third-party service providers.",Third-Party Risk Management

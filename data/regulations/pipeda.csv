@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+CA-001,PIPEDA,"Organizations must obtain consent when collecting personal information.",Consent
+CA-002,PIPEDA,"Personal information must be collected for appropriate purposes only.",Collection Limitation
+CA-003,PIPEDA,"Personal information must be protected by security safeguards.",Security Safeguards
+CA-004,PIPEDA,"Individuals have the right to access their personal information.",Access Rights
+CA-005,PIPEDA,"Personal information must be accurate, complete, and up-to-date.",Data Accuracy
+CA-006,PIPEDA,"Organizations must have policies to manage personal information.",Accountability
+CA-007,PIPEDA,"Personal information must be retained only as long as necessary.",Retention Limitation
+CA-008,PIPEDA,"Organizations must provide recourse for individuals in case of complaints.",Complaint Handling
+CA-009,PIPEDA,"Personal information must not be disclosed without consent except as required by law.",Disclosure Limitation
+CA-010,PIPEDA,"Organizations must implement procedures to receive and respond to privacy breaches.",Breach Notification
+CA-011,PIPEDA,"Personal information must be collected directly from the individual where possible.",Collection Principle
+CA-012,PIPEDA,"Organizations must train employees on privacy policies and practices.",Training
+CA-013,PIPEDA,"Organizations must designate an individual responsible for compliance.",Privacy Officer
+CA-014,PIPEDA,"Information must be protected against unauthorized access, collection, use, or disclosure.",Protection
+CA-015,PIPEDA,"Cross-border transfers must ensure equivalent levels of protection.",Cross-Border Data Transfer
+CA-016,PIPEDA,"Consent must be meaningful and based on clear explanations.",Meaningful Consent
+CA-017,PIPEDA,"Organizations must disclose their personal information management practices.",Transparency
+CA-018,PIPEDA,"Personal information must not be used for purposes other than those identified.",Use Limitation
+CA-019,PIPEDA,"Organizations must have mechanisms to correct personal information.",Correction Rights
+CA-020,PIPEDA,"Security measures must be proportionate to the sensitivity of the information.",Proportionality
+CA-021,PIPEDA,"Privacy impact assessments should be conducted for new projects.",Privacy Impact Assessment
+CA-022,PIPEDA,"Individuals must be informed of the purposes for which information is collected.",Purpose Specification
+CA-023,PIPEDA,"Third-party service providers must be contractually obligated to protect personal information.",Third-Party Management
+CA-024,PIPEDA,"Organizations must ensure that personal information is protected during storage and transmission.",Data Security
+CA-025,PIPEDA,"Privacy policies must be easily accessible to individuals.",Policy Accessibility
+CA-026,PIPEDA,"Organizations must have procedures for responding to government requests for data.",Government Requests
+CA-027,PIPEDA,"Organizations must monitor and audit compliance with privacy policies.",Compliance Monitoring
+CA-028,PIPEDA,"Personal data collected must be limited to what is necessary.",Data Minimization
+CA-029,PIPEDA,"Consent can be withdrawn at any time by the individual.",Consent Withdrawal
+CA-030,PIPEDA,"Organizations must keep records of consent and processing activities.",Record Keeping

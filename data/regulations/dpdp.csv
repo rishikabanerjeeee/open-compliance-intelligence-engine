@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+IN-001,DPDP,"Personal data must be processed only for lawful purposes and with consent of the data principal.",Data Protection
+IN-002,DPDP,"Data fiduciaries must implement reasonable security practices to protect personal data.",Security
+IN-003,DPDP,"Individuals have the right to access their personal data held by data fiduciaries.",Data Subject Rights
+IN-004,DPDP,"Data fiduciaries must notify data principals and the regulator within 72 hours of a data breach.",Breach Notification
+IN-005,DPDP,"Sensitive personal data requires explicit consent before processing.",Consent Management
+IN-006,DPDP,"Data fiduciaries must conduct Data Protection Impact Assessments for high-risk processing.",Risk Assessment
+IN-007,DPDP,"Cross-border transfer of personal data is allowed only if adequate safeguards are in place.",Data Transfer
+IN-008,DPDP,"Data principals can withdraw consent at any time for processing their data.",Consent Management
+IN-009,DPDP,"Data fiduciaries must appoint a Data Protection Officer for compliance oversight.",Governance
+IN-010,DPDP,"Personal data must be retained only as long as necessary for the purpose it was collected.",Data Retention
+IN-011,DPDP,"Automated decision-making based on personal data requires transparency and fairness.",AI & Automation
+IN-012,DPDP,"Data fiduciaries must provide mechanisms for data correction and erasure upon request.",Data Subject Rights
+IN-013,DPDP,"Data fiduciaries are prohibited from processing personal data of children without parental consent.",Special Categories
+IN-014,DPDP,"Personal data must be collected directly from the data principal unless otherwise authorized.",Data Collection
+IN-015,DPDP,"Data fiduciaries must maintain records of processing activities for audit purposes.",Compliance
+IN-016,DPDP,"Use of personal data for targeted advertising requires clear consent.",Marketing & Advertising
+IN-017,DPDP,"Data fiduciaries must implement appropriate technical and organizational measures.",Security
+IN-018,DPDP,"Personal data should not be processed in a way that causes harm or discrimination.",Ethics
+IN-019,DPDP,"Third-party processors must comply with the same data protection requirements.",Third-Party Risk
+IN-020,DPDP,"Data principals have the right to data portability.",Data Subject Rights
+IN-021,DPDP,"Data fiduciaries must conduct regular audits of data protection practices.",Audit
+IN-022,DPDP,"Data fiduciaries should ensure transparency about data processing policies to data principals.",Transparency
+IN-023,DPDP,"Personal data breaches must be documented and investigated.",Incident Management
+IN-024,DPDP,"Data fiduciaries must ensure the accuracy and completeness of personal data.",Data Quality
+IN-025,DPDP,"Data fiduciaries should minimize data collection to what is strictly necessary.",Data Minimization
+IN-026,DPDP,"Processing of sensitive personal data requires additional protection mechanisms.",Sensitive Data
+IN-027,DPDP,"Data principals should be informed about the purpose of data processing.",Transparency
+IN-028,DPDP,"Personal data must be protected against unauthorized or unlawful processing.",Security
+IN-029,DPDP,"Data fiduciaries must implement privacy by design and by default.",Privacy Engineering
+IN-030,DPDP,"Complaints regarding data protection must be addressed promptly and fairly.",Grievance Redressal

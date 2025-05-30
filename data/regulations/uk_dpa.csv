@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+UK-DPA-001,UK DPA,"Personal data must be processed lawfully, fairly, and transparently.",Lawfulness & Fairness
+UK-DPA-002,UK DPA,"Data must be collected for specified, explicit, and legitimate purposes.",Purpose Limitation
+UK-DPA-003,UK DPA,"Only adequate, relevant, and necessary data should be collected.",Data Minimization
+UK-DPA-004,UK DPA,"Personal data must be accurate and kept up to date.",Accuracy
+UK-DPA-005,UK DPA,"Data should not be kept for longer than necessary.",Storage Limitation
+UK-DPA-006,UK DPA,"Personal data must be processed securely to prevent unauthorized access.",Security
+UK-DPA-007,UK DPA,"Data controllers must demonstrate compliance with all principles.",Accountability
+UK-DPA-008,UK DPA,"Individuals have the right to access their personal data.",Data Subject Rights
+UK-DPA-009,UK DPA,"Individuals can request correction of inaccurate personal data.",Rectification
+UK-DPA-010,UK DPA,"Individuals can request deletion of their personal data.",Right to Erasure
+UK-DPA-011,UK DPA,"Processing must have a lawful basis (e.g., consent, legal obligation).",Legal Basis
+UK-DPA-012,UK DPA,"Consent must be freely given, specific, informed, and unambiguous.",Consent
+UK-DPA-013,UK DPA,"Children's data must be handled with additional protection measures.",Child Data
+UK-DPA-014,UK DPA,"Data protection impact assessments are required for high-risk processing.",Risk Assessment
+UK-DPA-015,UK DPA,"Organizations must report data breaches within 72 hours.",Breach Notification
+UK-DPA-016,UK DPA,"Data must be protected during international transfers.",International Transfer
+UK-DPA-017,UK DPA,"Contracts must be in place with processors handling personal data.",Third-Party Processing
+UK-DPA-018,UK DPA,"Organizations must maintain data processing records.",Documentation
+UK-DPA-019,UK DPA,"Profiling and automated decision-making must be transparent and fair.",Automated Processing
+UK-DPA-020,UK DPA,"Data must not be used in ways incompatible with initial purposes.",Purpose Integrity
+UK-DPA-021,UK DPA,"Special category data must have stronger safeguards.",Sensitive Data
+UK-DPA-022,UK DPA,"Individuals have the right to data portability.",Data Portability
+UK-DPA-023,UK DPA,"Marketing communications require clear consent.",Direct Marketing
+UK-DPA-024,UK DPA,"Privacy notices must explain data usage in plain language.",Privacy Notice
+UK-DPA-025,UK DPA,"Surveillance (e.g., CCTV) must be justified and minimally intrusive.",Surveillance
+UK-DPA-026,UK DPA,"All staff must be trained on data protection policies.",Staff Training
+UK-DPA-027,UK DPA,"Regular audits must ensure data protection compliance.",Compliance Monitoring
+UK-DPA-028,UK DPA,"Organizations must have a Data Protection Officer if required.",DPO Appointment
+UK-DPA-029,UK DPA,"The ICO (Information Commissioner’s Office) must be notified for certain activities.",Regulatory Reporting
+UK-DPA-030,UK DPA,"Access to data must be restricted based on job roles.",Access Control

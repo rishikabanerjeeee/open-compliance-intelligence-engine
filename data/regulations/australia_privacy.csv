@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+AUS-001,Australia Privacy Act,"Entities must manage personal information in an open and transparent way.",Governance
+AUS-002,Australia Privacy Act,"Entities must take reasonable steps to implement privacy policies and practices.",Governance
+AUS-003,Australia Privacy Act,"An individual has the right to access their personal information.",Data Subject Rights
+AUS-004,Australia Privacy Act,"Entities must ensure the quality and accuracy of the personal information they hold.",Data Quality
+AUS-005,Australia Privacy Act,"Personal information must be collected only by lawful and fair means.",Data Collection
+AUS-006,Australia Privacy Act,"Entities must notify individuals when collecting personal information.",Transparency
+AUS-007,Australia Privacy Act,"Entities must not collect sensitive information unless necessary and with consent.",Sensitive Data
+AUS-008,Australia Privacy Act,"Entities must only use or disclose personal information for the purpose it was collected.",Data Use
+AUS-009,Australia Privacy Act,"Entities must take reasonable steps to secure personal information from misuse or loss.",Security
+AUS-010,Australia Privacy Act,"Entities must destroy or de-identify personal information no longer needed.",Data Retention
+AUS-011,Australia Privacy Act,"Entities must obtain consent for direct marketing using personal data.",Consent
+AUS-012,Australia Privacy Act,"Entities must provide an opt-out mechanism for direct marketing.",Consent
+AUS-013,Australia Privacy Act,"Cross-border disclosure must comply with APP 8 requirements.",Cross-Border Transfers
+AUS-014,Australia Privacy Act,"Entities must take reasonable steps to ensure overseas recipients comply with APPs.",Cross-Border Transfers
+AUS-015,Australia Privacy Act,"Individuals must be able to remain anonymous when lawful and practicable.",Anonymity
+AUS-016,Australia Privacy Act,"Entities must provide contact details for privacy-related concerns.",Governance
+AUS-017,Australia Privacy Act,"Entities must have clear procedures for privacy complaints.",Accountability
+AUS-018,Australia Privacy Act,"Entities must maintain secure IT systems to protect personal information.",Security
+AUS-019,Australia Privacy Act,"Entities must assess privacy risks in new projects or system changes.",Privacy by Design
+AUS-020,Australia Privacy Act,"Entities must train employees on privacy and data protection.",Training
+AUS-021,Australia Privacy Act,"Entities must restrict internal access to personal information to authorized staff only.",Access Control
+AUS-022,Australia Privacy Act,"Entities must notify OAIC and affected individuals in the event of eligible data breaches.",Breach Notification
+AUS-023,Australia Privacy Act,"Entities must regularly audit data handling and access logs.",Monitoring
+AUS-024,Australia Privacy Act,"Entities must encrypt personal data in transit and at rest.",Encryption
+AUS-025,Australia Privacy Act,"Entities must ensure third-party vendors comply with privacy requirements.",Third-Party Risk
+AUS-026,Australia Privacy Act,"Biometric data is considered sensitive and needs explicit consent to collect.",Sensitive Data
+AUS-027,Australia Privacy Act,"Entities must allow individuals to correct their personal information.",Data Subject Rights
+AUS-028,Australia Privacy Act,"Use of surveillance must be justified and privacy-impact assessed.",Surveillance
+AUS-029,Australia Privacy Act,"Public-facing privacy notices must be easy to understand.",Transparency
+AUS-030,Australia Privacy Act,"Entities must document and publish data collection purposes.",Transparency

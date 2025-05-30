@@ -1,0 +1,31 @@
+id,regulator,requirement_text,category
+SG-001,MSA,"Financial institutions must implement risk-based AML/CFT frameworks.",Anti-Money Laundering (AML)
+SG-002,MSA,"Customer due diligence (CDD) must be performed for all customers.",Customer Due Diligence
+SG-003,MSA,"Suspicious transaction reports must be submitted promptly to the authorities.",Reporting Requirements
+SG-004,MSA,"Financial institutions must establish robust internal controls to prevent fraud.",Internal Controls
+SG-005,MSA,"Adequate governance and oversight must be maintained by the board of directors.",Governance
+SG-006,MSA,"Financial institutions must conduct regular risk assessments.",Risk Management
+SG-007,MSA,"Data privacy measures must protect customer information.",Data Protection
+SG-008,MSA,"Transaction monitoring systems must detect unusual or suspicious activities.",Transaction Monitoring
+SG-009,MSA,"Staff training programs on AML/CFT must be conducted regularly.",Training and Awareness
+SG-010,MSA,"Financial institutions must maintain audit trails for compliance verification.",Audit and Compliance
+SG-011,MSA,"Controls to detect and prevent financing of terrorism must be implemented.",Counter-Terrorism Financing (CTF)
+SG-012,MSA,"Financial institutions must screen customers against sanctions lists.",Sanctions Compliance
+SG-013,MSA,"Risk-based approach must be applied to new products and services.",Product Risk Management
+SG-014,MSA,"Third-party service providers must comply with MAS regulations.",Third-Party Risk
+SG-015,MSA,"Incident response plans must be developed and tested.",Incident Management
+SG-016,MSA,"Financial institutions must ensure business continuity planning.",Business Continuity
+SG-017,MSA,"Records must be retained for at least five years.",Record Retention
+SG-018,MSA,"Financial institutions must report cyber incidents to MAS within stipulated timeframes.",Cybersecurity
+SG-019,MSA,"Customer identity verification procedures must comply with MAS standards.",Customer Identification
+SG-020,MSA,"Policies and procedures must be documented and updated regularly.",Policy Management
+SG-021,MSA,"Financial institutions must implement controls for anti-bribery and corruption.",Anti-Bribery
+SG-022,MSA,"Internal audit functions must be independent and effective.",Internal Audit
+SG-023,MSA,"All transactions must be traceable and auditable.",Traceability
+SG-024,MSA,"Data encryption must be used for sensitive information.",Data Security
+SG-025,MSA,"Financial institutions must comply with MAS guidelines on outsourcing.",Outsourcing
+SG-026,MSA,"Management must regularly review compliance programs.",Management Review
+SG-027,MSA,"Financial institutions must report large cash transactions as required.",Cash Transaction Reporting
+SG-028,MSA,"Compliance officers must be appointed with defined roles.",Compliance Officer
+SG-029,MSA,"Policies must address emerging risks including digital assets.",Emerging Risks
+SG-030,MSA,"Whistleblowing mechanisms must be established and maintained.",Whistleblowing
