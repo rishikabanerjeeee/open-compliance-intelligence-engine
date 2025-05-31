@@ -46,10 +46,14 @@ def load_all_regulation_embeddings(embeddings_dir):
                     }
     return embeddings_dict
 
-def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=3, threshold=0.5):
+def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=3, min_threshold=0.70):
     """
-    Match each control embedding to top N most similar regulation requirements above a similarity threshold.
-    Returns a list of matches per control.
+    Match each control embedding to top N most similar regulation requirements above a minimum similarity threshold.
+    Adds a 'match_level' field to each match dict based on similarity:
+      - Strong: similarity >= 0.80
+      - Possible: 0.75 <= similarity < 0.80
+      - Weak: 0.70 <= similarity < 0.75
+      - No Match: similarity < 0.70 (excluded)
     """
     results = []
 
@@ -63,23 +67,36 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
             categories = reg_data['categories']
 
             if len(reg_embs) == 0:
-                continue  # skip empty embeddings
+                continue
 
             sims = cosine_similarity(ctrl_emb.reshape(1, -1), reg_embs)[0]
             top_indices = sims.argsort()[-top_n:][::-1]
 
             for idx in top_indices:
                 score = sims[idx]
-                if score >= threshold:
-                    control_results.append({
-                        'control_index': i,
-                        'regulation': reg_name,
-                        'requirement_index': idx,
-                        'requirement_text': texts[idx] if idx < len(texts) else "N/A",
-                        'similarity': float(score),
-                        'tags': tags[idx] if idx < len(tags) else "N/A",
-                        'category_refined': categories[idx] if idx < len(categories) else "N/A"
-                    })
+                if score < min_threshold:
+                    continue
+
+                # Determine match level
+                if score >= 0.80:
+                    level = "Strong"
+                elif score >= 0.75:
+                    level = "Possible"
+                elif score >= 0.70:
+                    level = "Weak"
+                else:
+                    level = "No Match"  # won't happen due to threshold
+
+                control_results.append({
+                    'control_index': i,
+                    'regulation': reg_name,
+                    'requirement_index': idx,
+                    'requirement_text': texts[idx] if idx < len(texts) else "N/A",
+                    'similarity': float(score),
+                    'match_level': level,
+                    'tags': tags[idx] if idx < len(tags) else "N/A",
+                    'category_refined': categories[idx] if idx < len(categories) else "N/A"
+                })
 
         control_results = sorted(control_results, key=lambda x: x['similarity'], reverse=True)[:top_n]
         results.append(control_results)
