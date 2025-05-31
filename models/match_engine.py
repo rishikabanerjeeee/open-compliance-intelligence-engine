@@ -161,4 +161,40 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"❌ Error saving results: {e}")
+        # === Compute and print overall summary ===
+        print("\n📊 Overall Match Summary:")
+
+        summary_stats = {
+            "Strong": 0,
+            "Possible": 0,
+            "Weak": 0,
+            "No Match": 0
+        }
+        regulation_counts = {}
+
+        for control_matches in matches:
+            if len(control_matches) == 0:
+                summary_stats["No Match"] += 1
+            else:
+                for match in control_matches:
+                    level = match["match_level"]
+                    summary_stats[level] += 1
+
+                    reg = match["regulation"]
+                    if reg not in regulation_counts:
+                        regulation_counts[reg] = 0
+                    regulation_counts[reg] += 1
+
+        total_controls = len(matches)
+        print(f"Total Controls: {total_controls}")
+        print(f"Matched Controls: {total_matched_controls}")
+        print(f"Unmatched Controls: {summary_stats['No Match']}")
+        print("\nMatch Levels Distribution:")
+        for level, count in summary_stats.items():
+            print(f"  {level}: {count}")
+
+        print("\nTop Regulations by Match Count:")
+        sorted_regs = sorted(regulation_counts.items(), key=lambda x: x[1], reverse=True)
+        for reg, count in sorted_regs:
+            print(f"  {reg}: {count} matches")
 
