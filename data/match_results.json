@@ -3,4 +3,743 @@
     {
       "control_index": 0,
       "regulation": "glba",
-      "requirement_index": 
+      "requirement_index": 12,
+      "requirement_text": "Use encryption to protect sensitive data in transit and at rest.",
+      "similarity": 0.8208780288696289,
+      "match_level": "Strong",
+      "tags": "encryption, data protection, transmission",
+      "category_refined": "Information Security"
+    },
+    {
+      "control_index": 0,
+      "regulation": "glba",
+      "requirement_index": 11,
+      "requirement_text": "Secure customer data both electronically and physically.",
+      "similarity": 0.6781070828437805,
+      "match_level": "No Match",
+      "tags": "physical security, electronic security",
+      "category_refined": "Information Security"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 2,
+      "regulation": "msa",
+      "requirement_index": 22,
+      "requirement_text": "Keep track of all transactions for auditing.",
+      "similarity": 0.8452459573745728,
+      "match_level": "Strong",
+      "tags": "transaction traceability, audit",
+      "category_refined": "Audit & Compliance"
+    },
+    {
+      "control_index": 2,
+      "regulation": "rbi",
+      "requirement_index": 28,
+      "requirement_text": "Keep proper records of all banking transactions.",
+      "similarity": 0.7102367281913757,
+      "match_level": "Weak",
+      "tags": "record keeping, transactions, compliance",
+      "category_refined": "Governance & Documentation"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 4,
+      "regulation": "pipeda",
+      "requirement_index": 0,
+      "requirement_text": "Get permission from individuals before collecting their personal data.",
+      "similarity": 0.7938693761825562,
+      "match_level": "Possible",
+      "tags": "consent, permission, personal information",
+      "category_refined": "Consent Management"
+    },
+    {
+      "control_index": 4,
+      "regulation": "pipeda",
+      "requirement_index": 29,
+      "requirement_text": "Keep records of consent and data use activities.",
+      "similarity": 0.719423770904541,
+      "match_level": "Weak",
+      "tags": "record keeping, consent, data processing",
+      "category_refined": "Governance & Documentation"
+    },
+    {
+      "control_index": 4,
+      "regulation": "gdpr",
+      "requirement_index": 1,
+      "requirement_text": "Collect personal data only for clear, lawful reasons.",
+      "similarity": 0.7132763266563416,
+      "match_level": "Weak",
+      "tags": "purpose limitation, data collection",
+      "category_refined": "Data Protection Principles"
+    },
+    {
+      "control_index": 4,
+      "regulation": "dpdp",
+      "requirement_index": 13,
+      "requirement_text": "Collect personal data straight from the person unless allowed otherwise.",
+      "similarity": 0.7112270593643188,
+      "match_level": "Weak",
+      "tags": "data collection, direct source, authorization",
+      "category_refined": "Data Collection"
+    },
+    {
+      "control_index": 4,
+      "regulation": "pipeda",
+      "requirement_index": 5,
+      "requirement_text": "Have clear policies on how personal data is handled.",
+      "similarity": 0.7101099491119385,
+      "match_level": "Weak",
+      "tags": "policies, accountability, data management",
+      "category_refined": "Governance & Accountability"
+    }
+  ],
+  [
+    {
+      "control_index": 5,
+      "regulation": "glba",
+      "requirement_index": 5,
+      "requirement_text": "Only allow authorized staff to access customer data.",
+      "similarity": 0.6511135101318359,
+      "match_level": "No Match",
+      "tags": "access control, authorization, data security",
+      "category_refined": "Access Management"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "control_index": 8,
+      "regulation": "msa",
+      "requirement_index": 6,
+      "requirement_text": "Protect customer data with privacy safeguards.",
+      "similarity": 0.7272403240203857,
+      "match_level": "Weak",
+      "tags": "data privacy, protection, customer data",
+      "category_refined": "Data Protection & Privacy"
+    },
+    {
+      "control_index": 8,
+      "regulation": "glba",
+      "requirement_index": 0,
+      "requirement_text": "Protect customer data from unauthorized access or use.",
+      "similarity": 0.7160729169845581,
+      "match_level": "Weak",
+      "tags": "data protection, unauthorized access, safeguards",
+      "category_refined": "Information Security"
+    },
+    {
+      "control_index": 8,
+      "regulation": "glba",
+      "requirement_index": 28,
+      "requirement_text": "Prevent unauthorized sharing of customer data.",
+      "similarity": 0.7140507102012634,
+      "match_level": "Weak",
+      "tags": "confidentiality, data protection",
+      "category_refined": "Information Security"
+    },
+    {
+      "control_index": 8,
+      "regulation": "glba",
+      "requirement_index": 11,
+      "requirement_text": "Secure customer data both electronically and physically.",
+      "similarity": 0.6928398609161377,
+      "match_level": "No Match",
+      "tags": "physical security, electronic security",
+      "category_refined": "Information Security"
+    },
+    {
+      "control_index": 8,
+      "regulation": "glba",
+      "requirement_index": 1,
+      "requirement_text": "Create and follow a written plan to secure customer information.",
+      "similarity": 0.679779052734375,
+      "match_level": "No Match",
+      "tags": "security plan, documentation, safeguards",
+      "category_refined": "Governance & Security Planning"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "control_index": 16,
+      "regulation": "pipeda",
+      "requirement_index": 24,
+      "requirement_text": "Make privacy policies easy to find and read.",
+      "similarity": 0.7169786691665649,
+      "match_level": "Weak",
+      "tags": "privacy policy, accessibility, transparency",
+      "category_refined": "Governance & Transparency"
+    },
+    {
+      "control_index": 16,
+      "regulation": "glba",
+      "requirement_index": 26,
+      "requirement_text": "Make sure policies follow all privacy laws.",
+      "similarity": 0.7110863924026489,
+      "match_level": "Weak",
+      "tags": "policy compliance, legal requirements",
+      "category_refined": "Governance & Compliance"
+    },
+    {
+      "control_index": 16,
+      "regulation": "pipeda",
+      "requirement_index": 26,
+      "requirement_text": "Regularly check adherence to privacy policies.",
+      "similarity": 0.6966410875320435,
+      "match_level": "No Match",
+      "tags": "monitoring, auditing, compliance",
+      "category_refined": "Governance & Accountability"
+    },
+    {
+      "control_index": 16,
+      "regulation": "glba",
+      "requirement_index": 27,
+      "requirement_text": "Send yearly privacy notices to consumers.",
+      "similarity": 0.6791548728942871,
+      "match_level": "No Match",
+      "tags": "privacy notice, annual communication",
+      "category_refined": "Transparency & Communication"
+    },
+    {
+      "control_index": 16,
+      "regulation": "glba",
+      "requirement_index": 8,
+      "requirement_text": "Inform customers about privacy policies and practices.",
+      "similarity": 0.6632617712020874,
+      "match_level": "No Match",
+      "tags": "privacy notice, customer communication",
+      "category_refined": "Transparency & Communication"
+    }
+  ],
+  [
+    {
+      "control_index": 17,
+      "regulation": "pipeda",
+      "requirement_index": 27,
+      "requirement_text": "Collect only the personal data that is really needed.",
+      "similarity": 0.7862616777420044,
+      "match_level": "Possible",
+      "tags": "data minimization, necessity",
+      "category_refined": "Data Collection & Use"
+    },
+    {
+      "control_index": 17,
+      "regulation": "gdpr",
+      "requirement_index": 2,
+      "requirement_text": "Only collect the personal data needed for the purpose.",
+      "similarity": 0.7788596749305725,
+      "match_level": "Possible",
+      "tags": "data minimization, relevance, necessity",
+      "category_refined": "Data Protection Principles"
+    },
+    {
+      "control_index": 17,
+      "regulation": "pipeda",
+      "requirement_index": 1,
+      "requirement_text": "Collect personal data only for valid and specific reasons.",
+      "similarity": 0.7661130428314209,
+      "match_level": "Possible",
+      "tags": "data collection, limitation, purpose",
+      "category_refined": "Data Collection & Use"
+    },
+    {
+      "control_index": 17,
+      "regulation": "dpdp",
+      "requirement_index": 24,
+      "requirement_text": "Only collect the personal data that is absolutely needed.",
+      "similarity": 0.7639873027801514,
+      "match_level": "Possible",
+      "tags": "data minimization, necessity",
+      "category_refined": "Data Retention & Minimization"
+    },
+    {
+      "control_index": 17,
+      "regulation": "uk_dpa",
+      "requirement_index": 2,
+      "requirement_text": "Collect only the data that is needed and relevant.",
+      "similarity": 0.7454192638397217,
+      "match_level": "Weak",
+      "tags": "data minimization, relevance, necessity",
+      "category_refined": "Data Processing Principles"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "control_index": 20,
+      "regulation": "msa",
+      "requirement_index": 7,
+      "requirement_text": "Use systems to watch for suspicious or unusual transactions.",
+      "similarity": 0.6758900880813599,
+      "match_level": "No Match",
+      "tags": "transaction monitoring, suspicious activity",
+      "category_refined": "Transaction Monitoring"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "control_index": 25,
+      "regulation": "pipeda",
+      "requirement_index": 22,
+      "requirement_text": "Ensure vendors protect personal data by contract.",
+      "similarity": 0.7468925714492798,
+      "match_level": "Weak",
+      "tags": "third-party, vendor management, contracts",
+      "category_refined": "Third-Party Risk Management"
+    }
+  ],
+  [],
+  [],
+  [
+    {
+      "control_index": 28,
+      "regulation": "rbi",
+      "requirement_index": 11,
+      "requirement_text": "Store customer data within the country as required by RBI.",
+      "similarity": 0.6767892837524414,
+      "match_level": "No Match",
+      "tags": "data localization, storage, compliance",
+      "category_refined": "Data Privacy & Localization"
+    },
+    {
+      "control_index": 28,
+      "regulation": "glba",
+      "requirement_index": 4,
+      "requirement_text": "Make sure vendors protect customer data properly.",
+      "similarity": 0.6520693898200989,
+      "match_level": "No Match",
+      "tags": "third-party oversight, vendor management, data protection",
+      "category_refined": "Third-Party Risk Management"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 30,
+      "regulation": "msa",
+      "requirement_index": 14,
+      "requirement_text": "Create and test plans to respond to incidents.",
+      "similarity": 0.738054633140564,
+      "match_level": "Weak",
+      "tags": "incident response, planning, testing",
+      "category_refined": "Incident Management"
+    }
+  ],
+  [
+    {
+      "control_index": 31,
+      "regulation": "gdpr",
+      "requirement_index": 9,
+      "requirement_text": "People can ask to delete their personal data in some cases.",
+      "similarity": 0.8163759708404541,
+      "match_level": "Strong",
+      "tags": "data erasure, right to be forgotten",
+      "category_refined": "Data Subject Rights"
+    },
+    {
+      "control_index": 31,
+      "regulation": "uk_dpa",
+      "requirement_index": 9,
+      "requirement_text": "People can ask for their personal data to be deleted.",
+      "similarity": 0.8129957914352417,
+      "match_level": "Strong",
+      "tags": "data deletion, erasure, individual rights",
+      "category_refined": "Data Subject Rights"
+    },
+    {
+      "control_index": 31,
+      "regulation": "pipeda",
+      "requirement_index": 5,
+      "requirement_text": "Have clear policies on how personal data is handled.",
+      "similarity": 0.7507743239402771,
+      "match_level": "Possible",
+      "tags": "policies, accountability, data management",
+      "category_refined": "Governance & Accountability"
+    },
+    {
+      "control_index": 31,
+      "regulation": "dpdp",
+      "requirement_index": 11,
+      "requirement_text": "People can request corrections or deletion of their personal data.",
+      "similarity": 0.7420402765274048,
+      "match_level": "Weak",
+      "tags": "data correction, erasure, user rights",
+      "category_refined": "Data Subject Rights"
+    },
+    {
+      "control_index": 31,
+      "regulation": "dpdp",
+      "requirement_index": 9,
+      "requirement_text": "Keep personal data only as long as needed and no longer.",
+      "similarity": 0.6828259229660034,
+      "match_level": "No Match",
+      "tags": "data retention, minimal storage, purpose limitation",
+      "category_refined": "Data Retention & Minimization"
+    }
+  ],
+  [
+    {
+      "control_index": 32,
+      "regulation": "gdpr",
+      "requirement_index": 18,
+      "requirement_text": "Inform authorities within 72 hours if a data breach occurs.",
+      "similarity": 0.8976963758468628,
+      "match_level": "Strong",
+      "tags": "data breach, notification, authorities",
+      "category_refined": "Incident Management"
+    },
+    {
+      "control_index": 32,
+      "regulation": "uk_dpa",
+      "requirement_index": 14,
+      "requirement_text": "Report any personal data breaches within three days.",
+      "similarity": 0.8119086027145386,
+      "match_level": "Strong",
+      "tags": "data breach, reporting, notification",
+      "category_refined": "Incident Response & Breach Management"
+    },
+    {
+      "control_index": 32,
+      "regulation": "dpdp",
+      "requirement_index": 3,
+      "requirement_text": "If personal data is breached, organizations must inform the person and regulator within 72 hours.",
+      "similarity": 0.7618990540504456,
+      "match_level": "Possible",
+      "tags": "data breach, notification, regulator",
+      "category_refined": "Incident Management"
+    },
+    {
+      "control_index": 32,
+      "regulation": "australia_privacy",
+      "requirement_index": 21,
+      "requirement_text": "If a data breach occurs, notify the authority and people affected.",
+      "similarity": 0.733961284160614,
+      "match_level": "Weak",
+      "tags": "breach notification, OAIC, incident response",
+      "category_refined": "Security > Breach Response"
+    },
+    {
+      "control_index": 32,
+      "regulation": "gdpr",
+      "requirement_index": 19,
+      "requirement_text": "Tell people quickly if their data has been breached.",
+      "similarity": 0.7275973558425903,
+      "match_level": "Weak",
+      "tags": "data breach, user notification",
+      "category_refined": "Incident Management"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "control_index": 37,
+      "regulation": "glba",
+      "requirement_index": 8,
+      "requirement_text": "Inform customers about privacy policies and practices.",
+      "similarity": 0.7701812982559204,
+      "match_level": "Possible",
+      "tags": "privacy notice, customer communication",
+      "category_refined": "Transparency & Communication"
+    },
+    {
+      "control_index": 37,
+      "regulation": "glba",
+      "requirement_index": 27,
+      "requirement_text": "Send yearly privacy notices to consumers.",
+      "similarity": 0.6817587614059448,
+      "match_level": "No Match",
+      "tags": "privacy notice, annual communication",
+      "category_refined": "Transparency & Communication"
+    },
+    {
+      "control_index": 37,
+      "regulation": "pipeda",
+      "requirement_index": 24,
+      "requirement_text": "Make privacy policies easy to find and read.",
+      "similarity": 0.6802854537963867,
+      "match_level": "No Match",
+      "tags": "privacy policy, accessibility, transparency",
+      "category_refined": "Governance & Transparency"
+    },
+    {
+      "control_index": 37,
+      "regulation": "gdpr",
+      "requirement_index": 26,
+      "requirement_text": "Provide easy-to-understand privacy notices to people.",
+      "similarity": 0.657103419303894,
+      "match_level": "No Match",
+      "tags": "privacy notice, communication",
+      "category_refined": "Transparency & Communication"
+    },
+    {
+      "control_index": 37,
+      "regulation": "pipeda",
+      "requirement_index": 7,
+      "requirement_text": "Offer ways for people to complain about privacy issues.",
+      "similarity": 0.6529926061630249,
+      "match_level": "No Match",
+      "tags": "complaint handling, recourse, privacy issues",
+      "category_refined": "Individual Rights & Redress"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 39,
+      "regulation": "glba",
+      "requirement_index": 13,
+      "requirement_text": "Keep detailed records of compliance efforts.",
+      "similarity": 0.6815126538276672,
+      "match_level": "No Match",
+      "tags": "record keeping, compliance documentation",
+      "category_refined": "Compliance & Documentation"
+    }
+  ],
+  [
+    {
+      "control_index": 40,
+      "regulation": "msa",
+      "requirement_index": 18,
+      "requirement_text": "Verify customer identities following MAS rules.",
+      "similarity": 0.6759413480758667,
+      "match_level": "No Match",
+      "tags": "customer ID verification, KYC",
+      "category_refined": "Customer Due Diligence"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "control_index": 45,
+      "regulation": "australia_privacy",
+      "requirement_index": 11,
+      "requirement_text": "People should be able to stop receiving marketing if they choose.",
+      "similarity": 0.6883926391601562,
+      "match_level": "No Match",
+      "tags": "opt-out, marketing, consent",
+      "category_refined": "Consent > Opt-Out Rights"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 47,
+      "regulation": "msa",
+      "requirement_index": 21,
+      "requirement_text": "Ensure audits are independent and thorough.",
+      "similarity": 0.7332795858383179,
+      "match_level": "Weak",
+      "tags": "internal audit, independence, effectiveness",
+      "category_refined": "Audit & Compliance"
+    },
+    {
+      "control_index": 47,
+      "regulation": "glba",
+      "requirement_index": 13,
+      "requirement_text": "Keep detailed records of compliance efforts.",
+      "similarity": 0.6962423324584961,
+      "match_level": "No Match",
+      "tags": "record keeping, compliance documentation",
+      "category_refined": "Compliance & Documentation"
+    },
+    {
+      "control_index": 47,
+      "regulation": "msa",
+      "requirement_index": 9,
+      "requirement_text": "Keep records of actions to prove compliance.",
+      "similarity": 0.6577718257904053,
+      "match_level": "No Match",
+      "tags": "audit trails, record keeping, compliance",
+      "category_refined": "Audit & Compliance"
+    },
+    {
+      "control_index": 47,
+      "regulation": "msa",
+      "requirement_index": 25,
+      "requirement_text": "Management should review compliance programs often.",
+      "similarity": 0.6536154747009277,
+      "match_level": "No Match",
+      "tags": "management review, compliance",
+      "category_refined": "Governance & Oversight"
+    }
+  ],
+  [],
+  [],
+  [],
+  [],
+  [],
+  [
+    {
+      "control_index": 53,
+      "regulation": "msa",
+      "requirement_index": 6,
+      "requirement_text": "Protect customer data with privacy safeguards.",
+      "similarity": 0.669263482093811,
+      "match_level": "No Match",
+      "tags": "data privacy, protection, customer data",
+      "category_refined": "Data Protection & Privacy"
+    },
+    {
+      "control_index": 53,
+      "regulation": "pipeda",
+      "requirement_index": 5,
+      "requirement_text": "Have clear policies on how personal data is handled.",
+      "similarity": 0.6684843301773071,
+      "match_level": "No Match",
+      "tags": "policies, accountability, data management",
+      "category_refined": "Governance & Accountability"
+    },
+    {
+      "control_index": 53,
+      "regulation": "rbi",
+      "requirement_index": 8,
+      "requirement_text": "Protect customers\u2019 private data according to laws.",
+      "similarity": 0.6565776467323303,
+      "match_level": "No Match",
+      "tags": "data protection, privacy, customer information",
+      "category_refined": "Data Privacy & Protection"
+    },
+    {
+      "control_index": 53,
+      "regulation": "glba",
+      "requirement_index": 0,
+      "requirement_text": "Protect customer data from unauthorized access or use.",
+      "similarity": 0.654477596282959,
+      "match_level": "No Match",
+      "tags": "data protection, unauthorized access, safeguards",
+      "category_refined": "Information Security"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 55,
+      "regulation": "australia_privacy",
+      "requirement_index": 23,
+      "requirement_text": "Data should be encrypted when stored or sent.",
+      "similarity": 0.6746655702590942,
+      "match_level": "No Match",
+      "tags": "encryption, security, data transmission",
+      "category_refined": "Security > Encryption"
+    },
+    {
+      "control_index": 55,
+      "regulation": "msa",
+      "requirement_index": 23,
+      "requirement_text": "Encrypt sensitive data to protect it.",
+      "similarity": 0.6611032485961914,
+      "match_level": "No Match",
+      "tags": "data encryption, data security",
+      "category_refined": "Data Protection & Privacy"
+    }
+  ],
+  [
+    {
+      "control_index": 56,
+      "regulation": "msa",
+      "requirement_index": 7,
+      "requirement_text": "Use systems to watch for suspicious or unusual transactions.",
+      "similarity": 0.74350506067276,
+      "match_level": "Weak",
+      "tags": "transaction monitoring, suspicious activity",
+      "category_refined": "Transaction Monitoring"
+    }
+  ],
+  [
+    {
+      "control_index": 57,
+      "regulation": "glba",
+      "requirement_index": 13,
+      "requirement_text": "Keep detailed records of compliance efforts.",
+      "similarity": 0.7814674377441406,
+      "match_level": "Possible",
+      "tags": "record keeping, compliance documentation",
+      "category_refined": "Compliance & Documentation"
+    },
+    {
+      "control_index": 57,
+      "regulation": "msa",
+      "requirement_index": 16,
+      "requirement_text": "Keep important records for at least five years.",
+      "similarity": 0.7690167427062988,
+      "match_level": "Possible",
+      "tags": "record retention, data storage",
+      "category_refined": "Compliance & Documentation"
+    },
+    {
+      "control_index": 57,
+      "regulation": "msa",
+      "requirement_index": 9,
+      "requirement_text": "Keep records of actions to prove compliance.",
+      "similarity": 0.7133691310882568,
+      "match_level": "Weak",
+      "tags": "audit trails, record keeping, compliance",
+      "category_refined": "Audit & Compliance"
+    }
+  ],
+  [],
+  [
+    {
+      "control_index": 59,
+      "regulation": "gdpr",
+      "requirement_index": 26,
+      "requirement_text": "Provide easy-to-understand privacy notices to people.",
+      "similarity": 0.7008076906204224,
+      "match_level": "Weak",
+      "tags": "privacy notice, communication",
+      "category_refined": "Transparency & Communication"
+    },
+    {
+      "control_index": 59,
+      "regulation": "australia_privacy",
+      "requirement_index": 28,
+      "requirement_text": "Privacy notices should be written in clear, simple language.",
+      "similarity": 0.6641256809234619,
+      "match_level": "No Match",
+      "tags": "privacy notice, transparency, communication",
+      "category_refined": "Transparency > Clear Notices"
+    },
+    {
+      "control_index": 59,
+      "regulation": "australia_privacy",
+      "requirement_index": 16,
+      "requirement_text": "Organizations need a proper process for handling privacy complaints.",
+      "similarity": 0.6621698141098022,
+      "match_level": "No Match",
+      "tags": "complaints, procedures, accountability",
+      "category_refined": "Governance > Complaints Handling"
+    },
+    {
+      "control_index": 59,
+      "regulation": "uk_dpa",
+      "requirement_index": 13,
+      "requirement_text": "Evaluate risks when processing data that could harm people's privacy.",
+      "similarity": 0.655048131942749,
+      "match_level": "No Match",
+      "tags": "risk assessment, DPIA, privacy risk",
+      "category_refined": "Risk Management & Compliance"
+    }
+  ]
+]

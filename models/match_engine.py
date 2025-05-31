@@ -29,7 +29,6 @@ def load_all_regulation_embeddings(embeddings_dir):
                         'categories': data.get('category_refined', []),
                     }
                 else:
-                    # If data is not dict, assume it's just embeddings array
                     embeddings_dict[reg_name] = {
                         'embeddings': data,
                         'texts': [],
@@ -73,9 +72,9 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                     level = "No Match"
 
                 control_results.append({
-                    'control_index': i,
+                    'control_index': int(i),
                     'regulation': reg_name,
-                    'requirement_index': idx,
+                    'requirement_index': int(idx),
                     'requirement_text': texts[idx] if idx < len(texts) else "N/A",
                     'similarity': float(score),
                     'match_level': level,
@@ -83,7 +82,6 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                     'category_refined': categories[idx] if idx < len(categories) else "N/A"
                 })
 
-        # Sort and keep top N matches per control
         control_results = sorted(control_results, key=lambda x: x['similarity'], reverse=True)[:top_n]
         results.append(control_results)
 
@@ -91,14 +89,11 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
 
 # --- Main script logic ---
 
-# ... (rest of your code unchanged)
-
 if __name__ == "__main__":
 
-    import os
     print("Current working directory:", os.getcwd())
 
-    # Paths - update as needed
+    # Paths
     controls_emb_path = "data/control_embeddings.pkl"
     regulations_emb_dir = "data/embeddings"
 
@@ -107,16 +102,16 @@ if __name__ == "__main__":
     control_embeddings = load_embeddings(controls_emb_path)
     print(f"Loaded {len(control_embeddings)} control embeddings.")
 
-    # Load regulations embeddings + metadata
+    # Load regulation embeddings
     print("Loading regulations embeddings...")
     regulations_embeddings_dict = load_all_regulation_embeddings(regulations_emb_dir)
     print(f"Loaded embeddings for regulations: {list(regulations_embeddings_dict.keys())}")
 
-    # Match controls to regulations
+    # Perform matching
     print("Matching controls to regulations...")
     matches = match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=5, min_threshold=0.65)
 
-    # Print matches per control
+    # Print results
     for i, control_matches in enumerate(matches):
         print(f"\n🔐 Control {i}:")
         print("-" * 40)
@@ -129,24 +124,28 @@ if __name__ == "__main__":
                 print(f"   - Match Level: {match['match_level']}")
                 print(f"   - Requirement: {match['requirement_text']}")
                 print(f"   - Tags: {match['tags']}")
-                print(f"   - Category: {match['category_refined']}")
-                print()
+                print(f"   - Category: {match['category_refined']}\n")
 
-    # === Add summary and save results ===
     print("Preparing to save summary and results...")
 
     try:
-        # 1. Total matched controls
+        # Count total matched controls
         total_matched_controls = sum(1 for m in matches if len(m) > 0)
         print(f"\n✅ Total Controls Matched: {total_matched_controls} / {len(matches)}")
 
-        # 2. Save matches to JSON
+        # Save to JSON
+        def convert(obj):
+            if isinstance(obj, (np.integer, np.int64)): return int(obj)
+            if isinstance(obj, (np.floating, np.float64)): return float(obj)
+            if isinstance(obj, (np.ndarray)): return obj.tolist()
+            return obj
+
         os.makedirs("data", exist_ok=True)
         with open("data/match_results.json", "w") as f:
-            json.dump(matches, f, indent=2)
+            json.dump(matches, f, indent=2, default=convert)
         print("📁 Saved match results to data/match_results.json")
 
-        # 3. Save matches to flattened CSV
+        # Save to CSV
         with open("data/match_results.csv", "w", newline='') as f:
             writer = csv.DictWriter(f, fieldnames=[
                 "control_index", "regulation", "requirement_index",
@@ -161,40 +160,36 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"❌ Error saving results: {e}")
-        # === Compute and print overall summary ===
-        print("\n📊 Overall Match Summary:")
 
-        summary_stats = {
-            "Strong": 0,
-            "Possible": 0,
-            "Weak": 0,
-            "No Match": 0
-        }
-        regulation_counts = {}
+    # Summary stats
+    print("\n📊 Overall Match Summary:")
 
-        for control_matches in matches:
-            if len(control_matches) == 0:
-                summary_stats["No Match"] += 1
-            else:
-                for match in control_matches:
-                    level = match["match_level"]
-                    summary_stats[level] += 1
+    summary_stats = {
+        "Strong": 0,
+        "Possible": 0,
+        "Weak": 0,
+        "No Match": 0
+    }
+    regulation_counts = {}
 
-                    reg = match["regulation"]
-                    if reg not in regulation_counts:
-                        regulation_counts[reg] = 0
-                    regulation_counts[reg] += 1
+    for control_matches in matches:
+        if len(control_matches) == 0:
+            summary_stats["No Match"] += 1
+        else:
+            for match in control_matches:
+                summary_stats[match["match_level"]] += 1
+                reg = match["regulation"]
+                regulation_counts[reg] = regulation_counts.get(reg, 0) + 1
 
-        total_controls = len(matches)
-        print(f"Total Controls: {total_controls}")
-        print(f"Matched Controls: {total_matched_controls}")
-        print(f"Unmatched Controls: {summary_stats['No Match']}")
-        print("\nMatch Levels Distribution:")
-        for level, count in summary_stats.items():
-            print(f"  {level}: {count}")
+    total_controls = len(matches)
+    print(f"Total Controls: {total_controls}")
+    print(f"Matched Controls: {total_matched_controls}")
+    print(f"Unmatched Controls: {summary_stats['No Match']}")
+    print("\nMatch Levels Distribution:")
+    for level, count in summary_stats.items():
+        print(f"  {level}: {count}")
 
-        print("\nTop Regulations by Match Count:")
-        sorted_regs = sorted(regulation_counts.items(), key=lambda x: x[1], reverse=True)
-        for reg, count in sorted_regs:
-            print(f"  {reg}: {count} matches")
-
+    print("\nTop Regulations by Match Count:")
+    sorted_regs = sorted(regulation_counts.items(), key=lambda x: x[1], reverse=True)
+    for reg, count in sorted_regs:
+        print(f"  {reg}: {count} matches")

@@ -1,0 +1,67 @@
+control_index,regulation,requirement_index,requirement_text,similarity,match_level,tags,category_refined
+0,glba,12,Use encryption to protect sensitive data in transit and at rest.,0.8208780288696289,Strong,"encryption, data protection, transmission",Information Security
+0,glba,11,Secure customer data both electronically and physically.,0.6781070828437805,No Match,"physical security, electronic security",Information Security
+2,msa,22,Keep track of all transactions for auditing.,0.8452459573745728,Strong,"transaction traceability, audit",Audit & Compliance
+2,rbi,28,Keep proper records of all banking transactions.,0.7102367281913757,Weak,"record keeping, transactions, compliance",Governance & Documentation
+4,pipeda,0,Get permission from individuals before collecting their personal data.,0.7938693761825562,Possible,"consent, permission, personal information",Consent Management
+4,pipeda,29,Keep records of consent and data use activities.,0.719423770904541,Weak,"record keeping, consent, data processing",Governance & Documentation
+4,gdpr,1,"Collect personal data only for clear, lawful reasons.",0.7132763266563416,Weak,"purpose limitation, data collection",Data Protection Principles
+4,dpdp,13,Collect personal data straight from the person unless allowed otherwise.,0.7112270593643188,Weak,"data collection, direct source, authorization",Data Collection
+4,pipeda,5,Have clear policies on how personal data is handled.,0.7101099491119385,Weak,"policies, accountability, data management",Governance & Accountability
+5,glba,5,Only allow authorized staff to access customer data.,0.6511135101318359,No Match,"access control, authorization, data security",Access Management
+8,msa,6,Protect customer data with privacy safeguards.,0.7272403240203857,Weak,"data privacy, protection, customer data",Data Protection & Privacy
+8,glba,0,Protect customer data from unauthorized access or use.,0.7160729169845581,Weak,"data protection, unauthorized access, safeguards",Information Security
+8,glba,28,Prevent unauthorized sharing of customer data.,0.7140507102012634,Weak,"confidentiality, data protection",Information Security
+8,glba,11,Secure customer data both electronically and physically.,0.6928398609161377,No Match,"physical security, electronic security",Information Security
+8,glba,1,Create and follow a written plan to secure customer information.,0.679779052734375,No Match,"security plan, documentation, safeguards",Governance & Security Planning
+16,pipeda,24,Make privacy policies easy to find and read.,0.7169786691665649,Weak,"privacy policy, accessibility, transparency",Governance & Transparency
+16,glba,26,Make sure policies follow all privacy laws.,0.7110863924026489,Weak,"policy compliance, legal requirements",Governance & Compliance
+16,pipeda,26,Regularly check adherence to privacy policies.,0.6966410875320435,No Match,"monitoring, auditing, compliance",Governance & Accountability
+16,glba,27,Send yearly privacy notices to consumers.,0.6791548728942871,No Match,"privacy notice, annual communication",Transparency & Communication
+16,glba,8,Inform customers about privacy policies and practices.,0.6632617712020874,No Match,"privacy notice, customer communication",Transparency & Communication
+17,pipeda,27,Collect only the personal data that is really needed.,0.7862616777420044,Possible,"data minimization, necessity",Data Collection & Use
+17,gdpr,2,Only collect the personal data needed for the purpose.,0.7788596749305725,Possible,"data minimization, relevance, necessity",Data Protection Principles
+17,pipeda,1,Collect personal data only for valid and specific reasons.,0.7661130428314209,Possible,"data collection, limitation, purpose",Data Collection & Use
+17,dpdp,24,Only collect the personal data that is absolutely needed.,0.7639873027801514,Possible,"data minimization, necessity",Data Retention & Minimization
+17,uk_dpa,2,Collect only the data that is needed and relevant.,0.7454192638397217,Weak,"data minimization, relevance, necessity",Data Processing Principles
+20,msa,7,Use systems to watch for suspicious or unusual transactions.,0.6758900880813599,No Match,"transaction monitoring, suspicious activity",Transaction Monitoring
+25,pipeda,22,Ensure vendors protect personal data by contract.,0.7468925714492798,Weak,"third-party, vendor management, contracts",Third-Party Risk Management
+28,rbi,11,Store customer data within the country as required by RBI.,0.6767892837524414,No Match,"data localization, storage, compliance",Data Privacy & Localization
+28,glba,4,Make sure vendors protect customer data properly.,0.6520693898200989,No Match,"third-party oversight, vendor management, data protection",Third-Party Risk Management
+30,msa,14,Create and test plans to respond to incidents.,0.738054633140564,Weak,"incident response, planning, testing",Incident Management
+31,gdpr,9,People can ask to delete their personal data in some cases.,0.8163759708404541,Strong,"data erasure, right to be forgotten",Data Subject Rights
+31,uk_dpa,9,People can ask for their personal data to be deleted.,0.8129957914352417,Strong,"data deletion, erasure, individual rights",Data Subject Rights
+31,pipeda,5,Have clear policies on how personal data is handled.,0.7507743239402771,Possible,"policies, accountability, data management",Governance & Accountability
+31,dpdp,11,People can request corrections or deletion of their personal data.,0.7420402765274048,Weak,"data correction, erasure, user rights",Data Subject Rights
+31,dpdp,9,Keep personal data only as long as needed and no longer.,0.6828259229660034,No Match,"data retention, minimal storage, purpose limitation",Data Retention & Minimization
+32,gdpr,18,Inform authorities within 72 hours if a data breach occurs.,0.8976963758468628,Strong,"data breach, notification, authorities",Incident Management
+32,uk_dpa,14,Report any personal data breaches within three days.,0.8119086027145386,Strong,"data breach, reporting, notification",Incident Response & Breach Management
+32,dpdp,3,"If personal data is breached, organizations must inform the person and regulator within 72 hours.",0.7618990540504456,Possible,"data breach, notification, regulator",Incident Management
+32,australia_privacy,21,"If a data breach occurs, notify the authority and people affected.",0.733961284160614,Weak,"breach notification, OAIC, incident response",Security > Breach Response
+32,gdpr,19,Tell people quickly if their data has been breached.,0.7275973558425903,Weak,"data breach, user notification",Incident Management
+37,glba,8,Inform customers about privacy policies and practices.,0.7701812982559204,Possible,"privacy notice, customer communication",Transparency & Communication
+37,glba,27,Send yearly privacy notices to consumers.,0.6817587614059448,No Match,"privacy notice, annual communication",Transparency & Communication
+37,pipeda,24,Make privacy policies easy to find and read.,0.6802854537963867,No Match,"privacy policy, accessibility, transparency",Governance & Transparency
+37,gdpr,26,Provide easy-to-understand privacy notices to people.,0.657103419303894,No Match,"privacy notice, communication",Transparency & Communication
+37,pipeda,7,Offer ways for people to complain about privacy issues.,0.6529926061630249,No Match,"complaint handling, recourse, privacy issues",Individual Rights & Redress
+39,glba,13,Keep detailed records of compliance efforts.,0.6815126538276672,No Match,"record keeping, compliance documentation",Compliance & Documentation
+40,msa,18,Verify customer identities following MAS rules.,0.6759413480758667,No Match,"customer ID verification, KYC",Customer Due Diligence
+45,australia_privacy,11,People should be able to stop receiving marketing if they choose.,0.6883926391601562,No Match,"opt-out, marketing, consent",Consent > Opt-Out Rights
+47,msa,21,Ensure audits are independent and thorough.,0.7332795858383179,Weak,"internal audit, independence, effectiveness",Audit & Compliance
+47,glba,13,Keep detailed records of compliance efforts.,0.6962423324584961,No Match,"record keeping, compliance documentation",Compliance & Documentation
+47,msa,9,Keep records of actions to prove compliance.,0.6577718257904053,No Match,"audit trails, record keeping, compliance",Audit & Compliance
+47,msa,25,Management should review compliance programs often.,0.6536154747009277,No Match,"management review, compliance",Governance & Oversight
+53,msa,6,Protect customer data with privacy safeguards.,0.669263482093811,No Match,"data privacy, protection, customer data",Data Protection & Privacy
+53,pipeda,5,Have clear policies on how personal data is handled.,0.6684843301773071,No Match,"policies, accountability, data management",Governance & Accountability
+53,rbi,8,Protect customers’ private data according to laws.,0.6565776467323303,No Match,"data protection, privacy, customer information",Data Privacy & Protection
+53,glba,0,Protect customer data from unauthorized access or use.,0.654477596282959,No Match,"data protection, unauthorized access, safeguards",Information Security
+55,australia_privacy,23,Data should be encrypted when stored or sent.,0.6746655702590942,No Match,"encryption, security, data transmission",Security > Encryption
+55,msa,23,Encrypt sensitive data to protect it.,0.6611032485961914,No Match,"data encryption, data security",Data Protection & Privacy
+56,msa,7,Use systems to watch for suspicious or unusual transactions.,0.74350506067276,Weak,"transaction monitoring, suspicious activity",Transaction Monitoring
+57,glba,13,Keep detailed records of compliance efforts.,0.7814674377441406,Possible,"record keeping, compliance documentation",Compliance & Documentation
+57,msa,16,Keep important records for at least five years.,0.7690167427062988,Possible,"record retention, data storage",Compliance & Documentation
+57,msa,9,Keep records of actions to prove compliance.,0.7133691310882568,Weak,"audit trails, record keeping, compliance",Audit & Compliance
+59,gdpr,26,Provide easy-to-understand privacy notices to people.,0.7008076906204224,Weak,"privacy notice, communication",Transparency & Communication
+59,australia_privacy,28,"Privacy notices should be written in clear, simple language.",0.6641256809234619,No Match,"privacy notice, transparency, communication",Transparency > Clear Notices
+59,australia_privacy,16,Organizations need a proper process for handling privacy complaints.,0.6621698141098022,No Match,"complaints, procedures, accountability",Governance > Complaints Handling
+59,uk_dpa,13,Evaluate risks when processing data that could harm people's privacy.,0.655048131942749,No Match,"risk assessment, DPIA, privacy risk",Risk Management & Compliance
