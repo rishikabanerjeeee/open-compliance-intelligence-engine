@@ -1,5 +1,3 @@
-# /models/match_engine.py
-
 import pickle
 import os
 import numpy as np
@@ -11,10 +9,14 @@ def load_embeddings(path):
 
 def load_all_regulation_embeddings(embeddings_dir):
     """
-    Load all .pkl embeddings in the directory into a dict:
+    Load all embeddings + metadata from pickle files into a dictionary:
     {
-        'gdpr': numpy_array_of_embeddings,
-        'rbi': numpy_array_of_embeddings,
+        'gdpr': {
+            'embeddings': numpy_array,
+            'texts': [...],
+            'tags': [...],
+            'categories': [...],
+        },
         ...
     }
     """
@@ -23,39 +25,49 @@ def load_all_regulation_embeddings(embeddings_dir):
         if file.endswith('.pkl'):
             reg_name = file.replace('.pkl', '')
             path = os.path.join(embeddings_dir, file)
-            embeddings_dict[reg_name] = load_embeddings(path)
+            with open(path, 'rb') as f:
+                data = pickle.load(f)
+                print(f"Loading {file}: type={type(data)}")
+
+                if isinstance(data, dict):
+                    embeddings_dict[reg_name] = {
+                        'embeddings': data.get('embeddings', np.array([])),
+                        'texts': data.get('expanded_text', data.get('text', [])),
+                        'tags': data.get('tags', []),
+                        'categories': data.get('category_refined', []),
+                    }
+                else:
+                    # If data is not dict, assume it's just embeddings array
+                    embeddings_dict[reg_name] = {
+                        'embeddings': data,
+                        'texts': [],
+                        'tags': [],
+                        'categories': [],
+                    }
     return embeddings_dict
 
-def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=3, threshold=0.75):
+def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=3, threshold=0.5):
     """
-    Args:
-        control_embeddings: np.array of shape (num_controls, embedding_dim)
-        regulations_embeddings_dict: dict {reg_name: np.array of embeddings}
-        top_n: number of top matches to return per control
-        threshold: minimum cosine similarity for valid match
-
-    Returns:
-        List of lists: for each control, a list of matching dicts:
-        [
-            [
-                {'control_index': 0, 'regulation': 'gdpr', 'requirement_index': 3, 'similarity': 0.82},
-                {...},
-                {...}
-            ],
-            [...],
-            ...
-        ]
+    Match each control embedding to top N most similar regulation requirements above a similarity threshold.
+    Returns a list of matches per control.
     """
     results = []
 
     for i, ctrl_emb in enumerate(control_embeddings):
         control_results = []
-        for reg_name, reg_embs in regulations_embeddings_dict.items():
-            # Compute cosine similarity between control embedding and all regulation req embeddings
-            sims = cosine_similarity(ctrl_emb.reshape(1, -1), reg_embs)[0]  # shape: (num_reg_reqs,)
 
-            # Get top N highest similarity indices
+        for reg_name, reg_data in regulations_embeddings_dict.items():
+            reg_embs = reg_data['embeddings']
+            texts = reg_data['texts']
+            tags = reg_data['tags']
+            categories = reg_data['categories']
+
+            if len(reg_embs) == 0:
+                continue  # skip empty embeddings
+
+            sims = cosine_similarity(ctrl_emb.reshape(1, -1), reg_embs)[0]
             top_indices = sims.argsort()[-top_n:][::-1]
+
             for idx in top_indices:
                 score = sims[idx]
                 if score >= threshold:
@@ -63,10 +75,12 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                         'control_index': i,
                         'regulation': reg_name,
                         'requirement_index': idx,
+                        'requirement_text': texts[idx] if idx < len(texts) else "N/A",
                         'similarity': float(score),
+                        'tags': tags[idx] if idx < len(tags) else "N/A",
+                        'category_refined': categories[idx] if idx < len(categories) else "N/A"
                     })
 
-        # Sort matches by similarity descending and keep only top N
         control_results = sorted(control_results, key=lambda x: x['similarity'], reverse=True)[:top_n]
         results.append(control_results)
 

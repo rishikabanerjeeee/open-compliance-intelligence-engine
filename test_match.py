@@ -1,20 +1,32 @@
-from models.sentence_encoder import embed_controls_csv
-from models.match_engine import load_all_regulation_embeddings, match_controls_to_regulations
+from sentence_transformers import SentenceTransformer
+import pandas as pd
+from models import match_engine
 
-# Step 1: Embed control statements
-control_embeddings, control_texts = embed_controls_csv('./data/controls/controls.csv')
+# Load the model
+model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Step 2: Load regulation embeddings
-reg_embeddings = load_all_regulation_embeddings('./data/embeddings')
+# Load controls from CSV
+controls_df = pd.read_csv("data/controls/controls.csv")
 
-# Step 3: Match controls to regulations
-results = match_controls_to_regulations(control_embeddings, reg_embeddings, top_n=3, threshold=0.75)
+control_texts = controls_df["control_statement"].fillna("").tolist()
 
-# Step 4: Print results
-for i, matches in enumerate(results):
-    print(f"\n🔹 Control {i + 1}: {control_texts[i]}")
-    if matches:
-        for match in matches:
-            print(f"   ✅ Matches {match['regulation']} requirement #{match['requirement_index']} with similarity {match['similarity']}")
-    else:
-        print("   ❌ No regulation matched above the threshold.")
+# Embed all control texts
+control_embeddings = model.encode(control_texts)
+
+# Load regulation embeddings (including texts, tags, categories)
+reg_embeds = match_engine.load_all_regulation_embeddings("data/embeddings")
+
+# Perform matching
+matches = match_engine.match_controls_to_regulations(control_embeddings, reg_embeds, top_n=3, threshold=0.5)
+
+# Print results
+for i, match_list in enumerate(matches):
+    print(f"\n🔐 Control {i+1}: {control_texts[i]}")
+    print("-" * 100)
+    if not match_list:
+        print("❌ No matches found.")
+    for m in match_list:
+        print(f"✅ Regulation: {m['regulation']}")
+        print(f"   - Similarity: {m['similarity']:.2f}")
+        print(f"   - Requirement: {m['requirement_text'][:100]}...")
+        print(f"   - Tags: {m.get('tags', 'N/A')} | Category: {m.get('category_refined', 'N/A')}")
