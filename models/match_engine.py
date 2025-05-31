@@ -1,25 +1,17 @@
-import pickle
 import os
+import pickle
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
+import json
+import csv
+
+# --- Load embeddings functions ---
 
 def load_embeddings(path):
     with open(path, 'rb') as f:
         return pickle.load(f)
 
 def load_all_regulation_embeddings(embeddings_dir):
-    """
-    Load all embeddings + metadata from pickle files into a dictionary:
-    {
-        'gdpr': {
-            'embeddings': numpy_array,
-            'texts': [...],
-            'tags': [...],
-            'categories': [...],
-        },
-        ...
-    }
-    """
     embeddings_dict = {}
     for file in os.listdir(embeddings_dir):
         if file.endswith('.pkl'):
@@ -46,15 +38,9 @@ def load_all_regulation_embeddings(embeddings_dir):
                     }
     return embeddings_dict
 
-def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=3, min_threshold=0.70):
-    """
-    Match each control embedding to top N most similar regulation requirements above a minimum similarity threshold.
-    Adds a 'match_level' field to each match dict based on similarity:
-      - Strong: similarity >= 0.80
-      - Possible: 0.75 <= similarity < 0.80
-      - Weak: 0.70 <= similarity < 0.75
-      - No Match: similarity < 0.70 (excluded)
-    """
+# --- Matching function ---
+
+def match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=5, min_threshold=0.65):
     results = []
 
     for i, ctrl_emb in enumerate(control_embeddings):
@@ -77,7 +63,6 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                 if score < min_threshold:
                     continue
 
-                # Determine match level
                 if score >= 0.80:
                     level = "Strong"
                 elif score >= 0.75:
@@ -85,7 +70,7 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                 elif score >= 0.70:
                     level = "Weak"
                 else:
-                    level = "No Match"  # won't happen due to threshold
+                    level = "No Match"
 
                 control_results.append({
                     'control_index': i,
@@ -98,7 +83,82 @@ def match_controls_to_regulations(control_embeddings, regulations_embeddings_dic
                     'category_refined': categories[idx] if idx < len(categories) else "N/A"
                 })
 
+        # Sort and keep top N matches per control
         control_results = sorted(control_results, key=lambda x: x['similarity'], reverse=True)[:top_n]
         results.append(control_results)
 
     return results
+
+# --- Main script logic ---
+
+# ... (rest of your code unchanged)
+
+if __name__ == "__main__":
+
+    import os
+    print("Current working directory:", os.getcwd())
+
+    # Paths - update as needed
+    controls_emb_path = "data/control_embeddings.pkl"
+    regulations_emb_dir = "data/embeddings"
+
+    # Load control embeddings
+    print("Loading control embeddings...")
+    control_embeddings = load_embeddings(controls_emb_path)
+    print(f"Loaded {len(control_embeddings)} control embeddings.")
+
+    # Load regulations embeddings + metadata
+    print("Loading regulations embeddings...")
+    regulations_embeddings_dict = load_all_regulation_embeddings(regulations_emb_dir)
+    print(f"Loaded embeddings for regulations: {list(regulations_embeddings_dict.keys())}")
+
+    # Match controls to regulations
+    print("Matching controls to regulations...")
+    matches = match_controls_to_regulations(control_embeddings, regulations_embeddings_dict, top_n=5, min_threshold=0.65)
+
+    # Print matches per control
+    for i, control_matches in enumerate(matches):
+        print(f"\n🔐 Control {i}:")
+        print("-" * 40)
+        if len(control_matches) == 0:
+            print("No matches found above threshold.")
+        else:
+            for match in control_matches:
+                print(f"✅ Regulation: {match['regulation']}")
+                print(f"   - Similarity: {match['similarity']:.2f}")
+                print(f"   - Match Level: {match['match_level']}")
+                print(f"   - Requirement: {match['requirement_text']}")
+                print(f"   - Tags: {match['tags']}")
+                print(f"   - Category: {match['category_refined']}")
+                print()
+
+    # === Add summary and save results ===
+    print("Preparing to save summary and results...")
+
+    try:
+        # 1. Total matched controls
+        total_matched_controls = sum(1 for m in matches if len(m) > 0)
+        print(f"\n✅ Total Controls Matched: {total_matched_controls} / {len(matches)}")
+
+        # 2. Save matches to JSON
+        os.makedirs("data", exist_ok=True)
+        with open("data/match_results.json", "w") as f:
+            json.dump(matches, f, indent=2)
+        print("📁 Saved match results to data/match_results.json")
+
+        # 3. Save matches to flattened CSV
+        with open("data/match_results.csv", "w", newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=[
+                "control_index", "regulation", "requirement_index",
+                "requirement_text", "similarity", "match_level",
+                "tags", "category_refined"
+            ])
+            writer.writeheader()
+            for control_matches in matches:
+                for row in control_matches:
+                    writer.writerow(row)
+        print("📁 Saved match results to data/match_results.csv")
+
+    except Exception as e:
+        print(f"❌ Error saving results: {e}")
+
